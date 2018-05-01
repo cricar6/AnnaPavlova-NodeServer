@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo img {
+  background: white;
+  border: 2px #ddd solid;
+  padding: 10px;
+  margin: 10vh auto;
+}
+
+.lateralSide {
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  background: white;
+  text-align: center;
+}
+
+.lateralSide nav {
+  margin: 0 0 70px 0;
+}
+
+.lateralSide nav ul li {
+  color: #1c1c1c;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 50px;
+}
+/*# sourceMappingURL=main.css.map */
