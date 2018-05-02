@@ -33,55 +33,25 @@
         </div>
     </div>
 
-    <div class="generalContainer">
-        <div class="arriba">
-            <div class="play1">
+    <div class="generalContainer" style="width: 1400px">
+        
+        {{#for }}
+            <div class="play" tipo="uno">
                 <button class="seeMore">
                     +
                 </button>
 
                 <h4 class="playTitle">
-                    Coppelia
+                    {{nombre}}El Cascanueces
                 </h4>
                 <div class="imgPlay">
-                    <img src="imgs/coppelia.png" alt="Coppelia">
+                    <img src="{{image}}imgs/el-cascanueces.png" alt="Coppelia">
                 </div>
             </div>
 
-        </div>
-        <div class="abajo">
-            <div class="play1">
+            
 
-                <div class="imgPlay">
-                    <img src="imgs/coppelia.png" alt="Coppelia">
-                </div>
-
-
-                <h4 class="playTitle">
-                    Coppelia
-                </h4>
-                <button class="seeMore">
-                    +
-                </button>
-            </div>
-            <div class="play1">
-
-                <div class="imgPlay">
-                    <img src="imgs/coppelia.png" alt="Coppelia">
-                </div>
-
-
-                <h4 class="playTitle">
-                    Coppelia
-                </h4>
-                <button class="seeMore">
-                    +
-                </button>
-            </div>
-
-        </div>
-
-
+        <!--Dos for, uno lee los pares, el otro los impares, los impares tienen tipo="uno", los pares tienen tipo="dos" -->
     </div>
 </body>
 

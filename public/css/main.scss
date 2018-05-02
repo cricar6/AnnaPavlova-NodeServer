@@ -4,11 +4,14 @@ $garamonde: 'Cormorant Garamond',
 serif;
 $montserrate: 'Montserrat',
 sans-serif;
-
 * {
     margin: 0;
     padding: 0;
     font-family: $montserrate;
+}
+
+body {
+    overflow-y: hidden;
 }
 .logo {
     img {
@@ -18,13 +21,14 @@ sans-serif;
         margin: 10vh auto;
     }
 }
+
 .lateralSide {
     position: fixed;
     height: 100vh;
     width: 20%;
     background: white;
     text-align: center;
-
+    z-index: 99;
     nav {
         margin: 0 0 70px 0;
         ul {
@@ -40,7 +44,6 @@ sans-serif;
 }
 
 button {
-
     background: rgba(0, 0, 0, 0);
     border: 2px $black solid;
     height: 50px;
@@ -52,137 +55,111 @@ button {
     cursor: pointer;
     margin-bottom: 10px;
 }
+
 .seeMore {
     width: 50px;
     margin-top: 10px;
 }
 
 .generalContainer {
-    background:#eee; 
-    width: 80%;
     height: 100vh;
     margin-left: 20%;
     padding-left: 20px;
     padding-top: 20px;
-
-    .play1 {
+    .play {
+        float: left;
         width: 300px;
         text-align: center;
-        margin: 0 20px;
+        margin: 0 22px;
         display: flex;
         flex-direction: column;
         align-items: center;
-            .imgPlay {
-                background: $black;
-                border-radius: 500px;
-                width: 100%;
-                margin: 20px 0;
-                img {
-                    width: 100%;
-                    transform: scale(1.2,1.2);
-                }
-            }
-            .playTitle {
-                width: 100%;
-                text-transform: uppercase;
-                color: white;
-                background: $black;
-                padding: 15px;
-                font-size: 24px;
-            }
-
-    }
- }
- .arriba {
-     margin-top: 0px;
-     .play1 {
         .imgPlay {
-
-            transform: rotate(135deg);
+            background: $black;
+            border-radius: 500px;
+            width: 100%;
+            margin: 20px 0;
             img {
-                transform: rotate(-135deg) scale(1.2, 1.2);
-
-            }
-        
-            &::before{
-                content: '';
                 width: 100%;
-                height: 100%;
-                position: absolute;
-
-                border: 10px solid $black;
-                outline-offset: 15px;
-                /* Halve the circle */
-                border-bottom-color: transparent;
-                border-left-color: transparent;
-                border-radius: 100%;
-                transform:  scale(1.1, 1.1);
-                margin-left: -11px;
-                margin-top: -9px;
+                transform: scale(1.2, 1.2);
             }
         }
-    }
- }
- .abajo {
-     margin-left: 343px;
-     margin-top: -342px;
-     .play1 {
-        .imgPlay {
-
-            transform: rotate(-45deg);
-            img {
-                transform: rotate(45deg) scale(1.2, 1.2);
-
-            }
-        
-            &::before{
-                content: '';
-                width: 100%;
-                height: 100%;
-                position: absolute;
-
-                border: 10px solid $black;
-                outline-offset: 15px;
-                /* Halve the circle */
-                border-bottom-color: transparent;
-                border-left-color: transparent;
-                border-radius: 100%;
-                transform:  scale(1.1, 1.1);
-                margin-left: -11px;
-                margin-top: -9px;
-            }
+        .playTitle {
+            width: 100%;
+            text-transform: uppercase;
+            color: white;
+            background: $black;
+            padding: 15px;
+            font-size: 24px;
         }
     }
- }
+}
 
- @media only screen and (max-width: 500px) {
-    .generalContainer {
-
+.play[tipo=uno] {
+    .imgPlay {
+        transform: rotate(135deg);
+        img {
+            transform: rotate(-135deg) scale(1.2, 1.2);
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 10px solid $black;
+            outline-offset: 15px;
+            /* Halve the circle */
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 100%;
+            transform: scale(1.1, 1.1);
+            margin-left: -11px;
+            margin-top: -9px;
+        }
     }
+}
+
+.play[tipo=dos] {
+    margin-top: 120px;
+    .imgPlay {
+        transform: rotate(-45deg);
+        img {
+            transform: rotate(45deg) scale(1.2, 1.2);
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 10px solid $black;
+            outline-offset: 15px;
+            /* Halve the circle */
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 100%;
+            transform: scale(1.1, 1.1);
+            margin-left: -11px;
+            margin-top: -9px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .generalContainer {}
 }
 
 @media only screen and ( max-width: 650px) and (min-width: 501px) {
-    .generalContainer {
-
-    }
+    .generalContainer {}
 }
-@media only screen and (max-width: 1140px)  {
+
+@media only screen and (max-width: 1140px) {
     .lateralSide {
         display: none;
     }
     .generalContainer {
         margin-left: 0;
         width: 100%;
-
     }
 }
-@media only screen and (min-width: 1140px)  {
 
-
-}
-
-
-
-
-
-
+@media only screen and (min-width: 1140px) {}

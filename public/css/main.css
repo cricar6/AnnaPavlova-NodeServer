@@ -4,6 +4,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 .logo img {
   background: white;
   border: 2px #ddd solid;
@@ -17,6 +21,7 @@
   width: 20%;
   background: white;
   text-align: center;
+  z-index: 99;
 }
 
 .lateralSide nav {
@@ -50,36 +55,35 @@ button {
 }
 
 .generalContainer {
-  background: #eee;
-  width: 80%;
   height: 100vh;
   margin-left: 20%;
   padding-left: 20px;
   padding-top: 20px;
 }
 
-.generalContainer .play1 {
+.generalContainer .play {
+  float: left;
   width: 300px;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.generalContainer .play1 .imgPlay {
+.generalContainer .play .imgPlay {
   background: #1c1c1c;
   border-radius: 500px;
   width: 100%;
   margin: 20px 0;
 }
 
-.generalContainer .play1 .imgPlay img {
+.generalContainer .play .imgPlay img {
   width: 100%;
   transform: scale(1.2, 1.2);
 }
 
-.generalContainer .play1 .playTitle {
+.generalContainer .play .playTitle {
   width: 100%;
   text-transform: uppercase;
   color: white;
@@ -88,19 +92,15 @@ button {
   font-size: 24px;
 }
 
-.arriba {
-  margin-top: 0px;
-}
-
-.arriba .play1 .imgPlay {
+.play[tipo=uno] .imgPlay {
   transform: rotate(135deg);
 }
 
-.arriba .play1 .imgPlay img {
+.play[tipo=uno] .imgPlay img {
   transform: rotate(-135deg) scale(1.2, 1.2);
 }
 
-.arriba .play1 .imgPlay::before {
+.play[tipo=uno] .imgPlay::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -116,20 +116,19 @@ button {
   margin-top: -9px;
 }
 
-.abajo {
-  margin-left: 343px;
-  margin-top: -342px;
+.play[tipo=dos] {
+  margin-top: 120px;
 }
 
-.abajo .play1 .imgPlay {
+.play[tipo=dos] .imgPlay {
   transform: rotate(-45deg);
 }
 
-.abajo .play1 .imgPlay img {
+.play[tipo=dos] .imgPlay img {
   transform: rotate(45deg) scale(1.2, 1.2);
 }
 
-.abajo .play1 .imgPlay::before {
+.play[tipo=dos] .imgPlay::before {
   content: '';
   width: 100%;
   height: 100%;
