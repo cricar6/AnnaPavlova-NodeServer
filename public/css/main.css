@@ -30,4 +30,128 @@
   font-weight: 600;
   line-height: 50px;
 }
+
+button {
+  background: transparent;
+  border: 2px #1c1c1c solid;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #1c1c1c;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.seeMore {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.generalContainer {
+  background: #eee;
+  width: 80%;
+  height: 100vh;
+  margin-left: 20%;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.generalContainer .play1 {
+  width: 300px;
+  text-align: center;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.generalContainer .play1 .imgPlay {
+  background: #1c1c1c;
+  border-radius: 500px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.generalContainer .play1 .imgPlay img {
+  width: 100%;
+  transform: scale(1.2, 1.2);
+}
+
+.generalContainer .play1 .playTitle {
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  background: #1c1c1c;
+  padding: 15px;
+  font-size: 24px;
+}
+
+.arriba {
+  margin-top: 0px;
+}
+
+.arriba .play1 .imgPlay {
+  transform: rotate(135deg);
+}
+
+.arriba .play1 .imgPlay img {
+  transform: rotate(-135deg) scale(1.2, 1.2);
+}
+
+.arriba .play1 .imgPlay::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 10px solid #1c1c1c;
+  outline-offset: 15px;
+  /* Halve the circle */
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 100%;
+  transform: scale(1.1, 1.1);
+  margin-left: -11px;
+  margin-top: -9px;
+}
+
+.abajo {
+  margin-left: 343px;
+  margin-top: -342px;
+}
+
+.abajo .play1 .imgPlay {
+  transform: rotate(-45deg);
+}
+
+.abajo .play1 .imgPlay img {
+  transform: rotate(45deg) scale(1.2, 1.2);
+}
+
+.abajo .play1 .imgPlay::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 10px solid #1c1c1c;
+  outline-offset: 15px;
+  /* Halve the circle */
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 100%;
+  transform: scale(1.1, 1.1);
+  margin-left: -11px;
+  margin-top: -9px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .lateralSide {
+    display: none;
+  }
+  .generalContainer {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
