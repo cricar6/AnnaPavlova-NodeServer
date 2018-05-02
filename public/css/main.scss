@@ -62,10 +62,13 @@ button {
 }
 
 .generalContainer {
+    display: flex;
+    align-items: center;
     height: 100vh;
+    margin-top:-40px;
     margin-left: 20%;
     padding-left: 20px;
-    padding-top: 20px;
+
     .play {
         float: left;
         width: 300px;

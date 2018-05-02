@@ -37,3 +37,12 @@ app.get('/', (req, res) => {
         });
     });
 });
+
+app.get('/obra/:name', (req, res)=> {
+    db.collection('plays').find (
+        {
+            name: req.param.name
+        }
+    ).toArray((err, result) => res.send(result))
+}
+);

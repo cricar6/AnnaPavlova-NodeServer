@@ -38,9 +38,11 @@
         {{#each plays}} {{#ifEquals tipo "uno"}}
         <div class="play" tipo="uno">
 
-            <button class="seeMore">
-                +
-            </button>
+            <a href="/producto/{{name}}">
+                <button class="seeMore">
+                    +
+                </button>
+            </a>
             <h4 class="playTitle">
                 {{name}}
             </h4>
@@ -59,15 +61,19 @@
             <h4 class="playTitle">
                 {{name}}
             </h4>
-            <button class="seeMore">
-                +
-            </button>
+             <a href="/obra/{{name}}">
+                <button class="seeMore">
+                    +
+                </button>
+            </a>
         </div>
         {{/ifEquals}} {{/each}}
 
 
         <!--Dos for, uno lee los pares, el otro los impares, los impares tienen tipo="uno", los pares tienen tipo="dos" -->
     </div>
+    <script src="js/cliente.js"></script>
+
 </body>
 
 </html>
