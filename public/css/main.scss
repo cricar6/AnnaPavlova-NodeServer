@@ -85,12 +85,14 @@ button {
             }
         }
         .playTitle {
+            height: 55px;
             width: 100%;
             text-transform: uppercase;
             color: white;
             background: $black;
             padding: 15px;
             font-size: 24px;
+            vertical-align: middle;
         }
     }
 }
@@ -120,7 +122,7 @@ button {
 }
 
 .play[tipo=dos] {
-    margin-top: 120px;
+    margin-top: 140px;
     .imgPlay {
         transform: rotate(-45deg);
         img {

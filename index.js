@@ -1,5 +1,6 @@
 const express = require('express'), 
     engines = require('consolidate'),
+    handlebars = require('handlebars'),
     MongoClient = require('mongodb').MongoClient;
     //ObjectID = require('mongodb').ObjectID;
     
@@ -12,6 +13,10 @@ app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
+handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+    return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
+
 MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     if (err) throw err;
 
@@ -21,6 +26,14 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 });
 
 app.get('/', (req, res) => {
-    res.render('index');
-    
+
+    var plays = db.collection('plays')
+    .find();
+
+    plays.toArray((err,result) => {
+        console.log('hi server')
+        res.render('index', {
+            plays: result
+        });
+    });
 });

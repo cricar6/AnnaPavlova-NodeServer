@@ -33,23 +33,38 @@
         </div>
     </div>
 
-    <div class="generalContainer" style="width: 1400px">
-        
-        {{#for }}
-            <div class="play" tipo="uno">
-                <button class="seeMore">
-                    +
-                </button>
+    <div class="generalContainer" style="width: 4300px">
 
-                <h4 class="playTitle">
-                    {{nombre}}El Cascanueces
-                </h4>
-                <div class="imgPlay">
-                    <img src="{{image}}imgs/el-cascanueces.png" alt="Coppelia">
-                </div>
+        {{#each plays}} {{#ifEquals tipo "uno"}}
+        <div class="play" tipo="uno">
+
+            <button class="seeMore">
+                +
+            </button>
+            <h4 class="playTitle">
+                {{name}}
+            </h4>
+            <div class="imgPlay">
+                <img src="{{image}}" alt="Coppelia">
             </div>
+        </div>
+        {{else}}
 
-            
+        <div class="play" tipo="dos">
+
+
+            <div class="imgPlay">
+                <img src="{{image}}" alt="Coppelia">
+            </div>
+            <h4 class="playTitle">
+                {{name}}
+            </h4>
+            <button class="seeMore">
+                +
+            </button>
+        </div>
+        {{/ifEquals}} {{/each}}
+
 
         <!--Dos for, uno lee los pares, el otro los impares, los impares tienen tipo="uno", los pares tienen tipo="dos" -->
     </div>

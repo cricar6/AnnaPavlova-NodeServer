@@ -84,12 +84,14 @@ button {
 }
 
 .generalContainer .play .playTitle {
+  height: 55px;
   width: 100%;
   text-transform: uppercase;
   color: white;
   background: #1c1c1c;
   padding: 15px;
   font-size: 24px;
+  vertical-align: middle;
 }
 
 .play[tipo=uno] .imgPlay {
@@ -117,7 +119,7 @@ button {
 }
 
 .play[tipo=dos] {
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 .play[tipo=dos] .imgPlay {
