@@ -37,14 +37,102 @@
         </div>
         <div class="contentContainer">
             <div class="playDescription">
+            
+            
             <div class="imgPlay">
                 <img src="/{{play.image}}" alt="asds{{play.name}}">
              </div>
              <p>{{play.description}}</p>
             </div>
 
-            <div class="playTable">
+            <div class="right">
+                
+                <div class="playTable">
+                    <div class="title">
+                        <h5>{{play.name}}</h6>
+                    </div>
+                    <div class="subtitle">
+                        <h6>Sobre la obra</h6>
+                        
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Basado en:
+                        </p>
+                        <p class="data">
+                            {{play.basedIn}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Música:
+                        </p>
+                        <p class="data">
+                            {{play.music}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType"> 
+                            Coreografía:
+                        </p>
+                        <p class="data">
+                            {{play.choreo}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Personajes:
+                        </p>
+                        <p class="data">
+                            
+                            {{play.personajes}}
+                        </p>
+                    </div>
+                    <div class="subtitle">
+                        <h6>Puesta en escena</h6> 
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Ubicación:
+                        </p>
+                        <p class="data">
+                            {{play.publicationUbication}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Teatro:
+                        </p>
+                        <p class="data">
+                            
+                            {{play.placePremiere}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Fecha:
+                        </p>
+                        <p class="data">
+                            
+                            {{play.datePremiere}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Directores:
+                        </p>
+                        <p class="data">
+                            
+                            {{play.directores}}
+                        </p>
+                    </div>
 
+
+                </div>
+
+                <button class="">
+                        Reservar Boletería
+                </button>
             </div>
         </div>
     </div>

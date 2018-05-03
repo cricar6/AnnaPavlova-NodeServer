@@ -2,15 +2,24 @@
   margin-left: 20%;
 }
 
+.generalContainer .contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .generalContainer .contentContainer .playDescription {
-  width: 20%;
+  margin: 2%;
+  margin-right: 40px;
+  width: 38%;
 }
 
 .generalContainer .contentContainer .playDescription .imgPlay {
   background: #1c1c1c;
   border-radius: 500px;
   width: 100%;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .generalContainer .contentContainer .playDescription .imgPlay img {
@@ -21,6 +30,66 @@
 .generalContainer .contentContainer .playDescription p {
   text-align: center;
   font-size: 15px;
+}
+
+.generalContainer .contentContainer .playTable {
+  width: 90%;
+  border: #1c1c1c 2px solid;
+  margin-left: 40px;
+}
+
+.generalContainer .contentContainer .playTable .title {
+  width: 100%;
+  background: #1c1c1c;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  border: #1c1c1c 2px solid;
+  box-sizing: border-box;
+}
+
+.generalContainer .contentContainer .playTable .subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  color: #1c1c1c;
+  background: white;
+  border-left: #1c1c1c 1px solid;
+  border-right: #1c1c1c 1px solid;
+  box-sizing: border-box;
+}
+
+.generalContainer .contentContainer .playTable .tabContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.generalContainer .contentContainer .playTable .tabContainer .dataType {
+  border-right: #1c1c1c 2px solid;
+  padding-bottom: 10px;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.generalContainer .contentContainer .playTable .tabContainer .data {
+  padding-left: 10px;
+  width: 80%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1140px) {
