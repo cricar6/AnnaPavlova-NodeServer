@@ -38,11 +38,17 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/obra/:name', (req, res)=> {
+app.get('/obra/:direction', (req, res)=> {
+    console.log(req.params.direction);
     db.collection('plays').find (
         {
-            name: req.param.name
+            direction: req.params.direction
         }
-    ).toArray((err, result) => res.send(result))
+    ).toArray((err, result) => {
+        console.log(result[0]);
+        res.render('play', {
+            play: result[0]
+        });
+    });
 }
 );

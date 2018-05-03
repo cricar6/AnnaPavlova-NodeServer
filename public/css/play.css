@@ -1,0 +1,35 @@
+.generalContainer {
+  margin-left: 20%;
+}
+
+.generalContainer .contentContainer .playDescription {
+  width: 20%;
+}
+
+.generalContainer .contentContainer .playDescription .imgPlay {
+  background: #1c1c1c;
+  border-radius: 500px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.generalContainer .contentContainer .playDescription .imgPlay img {
+  width: 100%;
+  transform: scale(1.2, 1.2);
+}
+
+.generalContainer .contentContainer .playDescription p {
+  text-align: center;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .generalContainer {
+    margin-left: 0;
+    width: 100%;
+  }
+  .generalContainer .playDescription {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=play.css.map */

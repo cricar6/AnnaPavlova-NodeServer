@@ -1,0 +1,44 @@
+$black: #1c1c1c;
+$gray: #cecece;
+$garamonde: 'Cormorant Garamond',
+serif;
+$montserrate: 'Montserrat',
+sans-serif;
+.generalContainer{
+    margin-left: 20%;
+    .contentContainer{
+        .playDescription{
+            width: 20%;
+            .imgPlay {
+                background: $black;
+                border-radius: 500px;
+                width: 100%;
+                margin: 20px 0;
+                img {
+                    width: 100%;
+                    transform: scale(1.2, 1.2);
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+    }
+    .superiorBar{
+
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .generalContainer {
+        margin-left: 0;
+        width: 100%;
+        .playDescription{
+            width: 40%;    
+        }
+    
+    }
+
+}
+
