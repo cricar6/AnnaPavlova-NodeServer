@@ -20,7 +20,7 @@ handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
 MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova', 
 {
     auth: {
-        user: 'cricar',
+        user: 'cristian6569@gmail.com',
         password: 'naitsirc_6569'
     }
 
