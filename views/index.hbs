@@ -36,41 +36,86 @@
 
 
     <div class="superiorBar">
-        <img src="" width="20px"alt="Volver" style="height:20px, background:red">
+        <img src="/imgs/icos/back.png" width="20px"alt="Volver" style="height:20px, background:red">
         <h3>Filtrar por</h3>
         <h6>Precio</h6>
-        <span>$40 000 a $55 000</span>
-        <input type="radio" name="" id="">
-        <span>$56 000 a $70 000</span>
-        <input type="radio" name="" id="">
-        <span>$71 000 a $85 000</span>
-        <input type="radio" name="" id="">
-        <span>$86 000 a $100 000</span>
-        <input type="radio" name="" id="">
-        <span>$101 000 a $115 000</span>
-        <input type="radio" name="" id="">
+        <form>
+            <div>
+                <input type="radio" name="price" id="price1">
+                <label for="price1">$40 000 a $55 000</label>
 
-        <h6>Temática</h6>
-        <span>Drama</span>
-                <input type="checkbox" name="" id="">
-        <span>Comedia</span>
-                <input type="checkbox" name="" id="">
-        <span>Tragedia</span>
-                <input type="checkbox" name="" id="">
-        <span>Tango</span>
-                <input type="checkbox" name="" id="">
-        <span>Romance</span>
-                <input type="checkbox" name="" id="">
-        <span>Suspenso</span>
-                <input type="checkbox" name="" id="">
-        <span>Pasión</span>
-                <input type="checkbox" name="" id="">
-        <span>Adultos</span>
-                <input type="checkbox" name="" id="">
-        <span>Infantil</span>
-                <input type="checkbox" name="" id="">
-        <span>Fantasía</span>
-        <input type="checkbox" name="" id="">
+                <input type="radio" name="price" id="price2">
+                <label for="price2">$56 000 a $70 000</label>
+
+                <input type="radio" name="price" id="price3">
+                <label for="price3">$71 000 a $85 000</label>
+
+                <input type="radio" name="price" id="price4">
+                <label for="price4">$86 000 a $100 000</label>
+
+                <input type="radio" name="price" id="price5">
+                <label for="price5">$101 000 a $115 000</label>
+            </div>
+        </form>
+        <fieldset>
+            <legend><h6>Temática</h6></legend>
+
+
+ 
+            <div>
+                <input type="checkbox" name="topic" id="topicDrama">
+                <label for="topicDrama">Drama</label>
+            </div> 
+
+            <div>
+                <input type="checkbox" name="topic" id="topicComedy">
+                <label for="topicComedy">Comedy</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="topic" id="topicTragedy">
+                <label for="topicTragedy">Tragedy</label>
+            </div>
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicTango">
+                <label for="topicComedy">Tango</label>
+            </div>
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicRomance">
+                <label for="topicRomance">Romance</label>
+            </div>
+
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicSuspense">
+                <label for="topicSuspense"></label>
+            </div>
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicPasion">
+                <label for="topicPasion">Pasión</label>
+            </div>
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicAdults">
+                <label for="topicAdults">Adultos</label>
+            </div>
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicKids">
+                <label for="topicKids">Infantil</label>
+            </div>
+
+                        <div>
+                <input type="checkbox" name="topic" id="topicFantasy">
+                <label for="topicFantasy">Fantasía</label>
+            </div>
+
+        </fieldset>
+
+
         <h6>Style</h6>
         <a href="/?style=experimental">
             <span>Experimental</span>

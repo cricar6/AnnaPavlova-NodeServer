@@ -5,6 +5,8 @@ serif;
 $montserrate: 'Montserrat',
 sans-serif;
 
+
+
 .generalContainer{
     margin-left: 20%;
     .contentContainer{
@@ -14,13 +16,15 @@ sans-serif;
         align-items: center;
         .playDescription{
             margin: 2%;
-            margin-right: 40px;
+            margin-right: 20%;
             width: 38%;
+            text-align: center;
             .imgPlay {
                 background: $black;
                 border-radius: 500px;
                 width: 100%;
                 margin: 40px 0;
+                max-width: 460px;
                 img {
                     width: 100%;
                     transform: scale(1.2, 1.2);

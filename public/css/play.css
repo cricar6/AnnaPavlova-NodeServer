@@ -11,8 +11,9 @@
 
 .generalContainer .contentContainer .playDescription {
   margin: 2%;
-  margin-right: 40px;
+  margin-right: 20%;
   width: 38%;
+  text-align: center;
 }
 
 .generalContainer .contentContainer .playDescription .imgPlay {
@@ -20,6 +21,7 @@
   border-radius: 500px;
   width: 100%;
   margin: 40px 0;
+  max-width: 460px;
 }
 
 .generalContainer .contentContainer .playDescription .imgPlay img {
