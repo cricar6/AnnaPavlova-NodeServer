@@ -17,12 +17,20 @@ handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova', 
+{
+    auth: {
+        user: 'cricar',
+        password: 'naitsirc_6569'
+    }
+
+    
+}, function (err, client) {
     if (err) throw err;
 
     db = client.db('annapavlova');
 
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
 });
 
 app.get('/', (req, res) => {
