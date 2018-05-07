@@ -23,8 +23,6 @@ MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova',
         user: 'cricar',
         password: 'naitsirc_6569'
     }
-
-    
 }, function (err, client) {
     if (err) throw err;
 
