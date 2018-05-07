@@ -32,6 +32,7 @@
         </div>
     </div>
     <div class="generalContainer">
+
         <div class="superiorBar">
             <span style="font-size: 25px;">Back</span>
         </div>
@@ -83,10 +84,13 @@
                         <p class="dataType">
                             Personajes:
                         </p>
-                        <p class="data">
-                            
-                            {{play.personajes}}
-                        </p>
+                        <ul>
+                            {{#each play.personajes}}
+                             <li class="data">
+                                    {{this}}
+                             </li>
+                            {{/each}}
+                        </ul>
                     </div>
                     <div class="subtitle">
                         <h6>Puesta en escena</h6> 
@@ -121,10 +125,13 @@
                         <p class="dataType">
                             Directores:
                         </p>
-                        <p class="data">
-                            
-                            {{play.directores}}
-                        </p>
+                        <ul>
+                            {{#each play.directores}}
+                             <li class="data">
+                                    {{this}}
+                             </li>
+                            {{/each}}
+                        </ul>
                     </div>
 
 

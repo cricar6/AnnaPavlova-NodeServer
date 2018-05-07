@@ -16,7 +16,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 50000,
+			"genders" : ["drama", "comedia", "romance"],
+			"style" : "tradicional"
 		}
 		{
 			"name": "El lago de los cisnes",
@@ -35,7 +38,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 55000,
+			"genders" : ["drama", "tragedia", "romance"],
+			"style" : "tradicional"
 		}
 		{
 			"name": "Hercules",
@@ -54,7 +60,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			]			,
+			"precio" : 75000,
+			"genders" : ["drama", "tragedia", "romance"],
+			"style" : "tradicional"
 		}
 		{
 			"name": "Alicia en el país de las maravillas",
@@ -73,7 +82,11 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			
+			"precio" : 60000,
+			"genders" : ["comedia", "fantasia", "infantil"],
+			"style" : "tradicional"
 		}
 		{
 			"name": "El Quijote",
@@ -92,7 +105,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 40000,
+			"genders" : ["drama", "comedia"],
+			"style" : "tradicional"
 		}
 		{
 			"name": "Coppelia",
@@ -111,7 +127,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 100000,
+			"genders" : ["drama", "tragedia", "romance", "fantasia"],
+			"style" : "tradicional"
 		}
 		{
 			"name": "New Orleans Cabaret en Paris",
@@ -130,7 +149,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 50000,
+			"genders" : ["tragedia", "tango", "adultos"],
+			"style" : "experimental"
 		}
 		{
 			"name": "Amor y Muerte en Berlin",
@@ -149,7 +171,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 55000,
+			"genders" : ["drama", "tragedia", "romance", "tango"],
+			"style" : "experimental"
 		}
 		{
 			"name": "El Retrato de Dorian Gray",
@@ -168,7 +193,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 60000,
+			"genders" : ["drama", "suspenso"],
+			"style" : "experimental"
 		}
 		{
 			"name": "Relaciones Peligrosas",
@@ -187,7 +215,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 55000,
+			"genders" : ["comedia", "romance", "suspenso"],
+			"style" : "experimental"
 		}
 		{
 			"name": "Carmen",
@@ -206,7 +237,10 @@
 			],
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
-			]
+			],
+			"precio" : 70000,
+			"genders" : ["tango","drama", "tragedia", "romance"],
+			"style" : "experimental"
 		}
 		{
 			"name": "Alexandros- Iksander",
@@ -226,6 +260,10 @@
 			"directores" : [
 				"Ana Consuelo Gómez","Caballero Jaime Díaz"
 			]
+			,
+			"precio" : 65000,
+			"genders" : ["drama", "tragedia", "romance"],
+			"style" : "experimental"
 		}
 
 

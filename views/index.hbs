@@ -34,7 +34,56 @@
         </div>
     </div>
 
+
+    <div class="superiorBar">
+        <img src="" width="20px"alt="Volver" style="height:20px, background:red">
+        <h3>Filtrar por</h3>
+        <h6>Precio</h6>
+        <span>$40 000 a $55 000</span>
+        <input type="radio" name="" id="">
+        <span>$56 000 a $70 000</span>
+        <input type="radio" name="" id="">
+        <span>$71 000 a $85 000</span>
+        <input type="radio" name="" id="">
+        <span>$86 000 a $100 000</span>
+        <input type="radio" name="" id="">
+        <span>$101 000 a $115 000</span>
+        <input type="radio" name="" id="">
+
+        <h6>Temática</h6>
+        <span>Drama</span>
+                <input type="checkbox" name="" id="">
+        <span>Comedia</span>
+                <input type="checkbox" name="" id="">
+        <span>Tragedia</span>
+                <input type="checkbox" name="" id="">
+        <span>Tango</span>
+                <input type="checkbox" name="" id="">
+        <span>Romance</span>
+                <input type="checkbox" name="" id="">
+        <span>Suspenso</span>
+                <input type="checkbox" name="" id="">
+        <span>Pasión</span>
+                <input type="checkbox" name="" id="">
+        <span>Adultos</span>
+                <input type="checkbox" name="" id="">
+        <span>Infantil</span>
+                <input type="checkbox" name="" id="">
+        <span>Fantasía</span>
+        <input type="checkbox" name="" id="">
+        <h6>Style</h6>
+        <a href="/?style=experimental">
+            <span>Experimental</span>
+        </a>
+        <a href="/?style=tradicional">
+            <span>Tradicional</span>
+        </a>
+        <!--Filtrar por:  
+        añadir a database:Precio .Temática. Danza tradicional o experimental. 
+        -->
+    </div>
     <div class="generalContainer" style="width: 4300px">
+
 
         {{#each plays}} {{#ifEquals tipo "uno"}}
         <div class="play" tipo="uno">
@@ -44,6 +93,7 @@
                     +
                 </button>
             </a>
+            
             <h4 class="playTitle">
                 {{name}}
             </h4>

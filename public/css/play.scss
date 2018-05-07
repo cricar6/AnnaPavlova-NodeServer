@@ -4,6 +4,7 @@ $garamonde: 'Cormorant Garamond',
 serif;
 $montserrate: 'Montserrat',
 sans-serif;
+
 .generalContainer{
     margin-left: 20%;
     .contentContainer{
@@ -27,7 +28,7 @@ sans-serif;
             }
             p {
                 text-align: center;
-                font-size: 15px;
+                font-size: 12px;
             }
         }
 
@@ -48,15 +49,12 @@ sans-serif;
             }
             .subtitle {
                 font-weight: bold;
-                font-size: 24px;
+                font-size: 20px;
                 text-align: center;
                 width: 100%;
                 padding: 10px 0;
                 color: $black;
                 background: white;
-
-                border-left: $black 1px solid;
-                border-right: $black 1px solid;
 
                 box-sizing: border-box;
 
@@ -67,17 +65,21 @@ sans-serif;
                 display: flex;
                 flex-direction: row;
                 
+                ul li{
+                    list-style-type: none;
+                }
                 .dataType {
                     border-right: $black 2px solid;
                     padding-bottom: 10px;
-
-                    width: 20%;
+                    font-size: 12px;
+                    width:40%;
                     text-align: right;
                     padding-right: 10px;
                 }
                 .data {
                     padding-left: 10px;
-                    width: 80%;
+                    width: 60%;
+                    font-size: 12px;
                 }
             }
 

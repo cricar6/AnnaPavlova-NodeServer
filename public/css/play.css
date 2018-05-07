@@ -29,7 +29,7 @@
 
 .generalContainer .contentContainer .playDescription p {
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .generalContainer .contentContainer .playTable {
@@ -52,14 +52,12 @@
 
 .generalContainer .contentContainer .playTable .subtitle {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   width: 100%;
   padding: 10px 0;
   color: #1c1c1c;
   background: white;
-  border-left: #1c1c1c 1px solid;
-  border-right: #1c1c1c 1px solid;
   box-sizing: border-box;
 }
 
@@ -69,17 +67,23 @@
   flex-direction: row;
 }
 
+.generalContainer .contentContainer .playTable .tabContainer ul li {
+  list-style-type: none;
+}
+
 .generalContainer .contentContainer .playTable .tabContainer .dataType {
   border-right: #1c1c1c 2px solid;
   padding-bottom: 10px;
-  width: 20%;
+  font-size: 12px;
+  width: 40%;
   text-align: right;
   padding-right: 10px;
 }
 
 .generalContainer .contentContainer .playTable .tabContainer .data {
   padding-left: 10px;
-  width: 80%;
+  width: 60%;
+  font-size: 12px;
 }
 
 .right {

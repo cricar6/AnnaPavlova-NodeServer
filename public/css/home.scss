@@ -6,10 +6,17 @@ serif;
 $montserrate: 'Montserrat',
 sans-serif;
 
+body {
+    overflow-y: hidden;
+}
+.superiorBar {
+    height: 10vh;
+    margin-left: 20%;
+}
 .generalContainer {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin-top:-40px;
     margin-left: 20%;
     padding-left: 20px;
