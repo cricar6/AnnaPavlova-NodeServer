@@ -36,10 +36,13 @@
 
 
     <div class="superiorBar">
-        <img src="/imgs/icos/back.png" width="20px"alt="Volver" style="height:20px, background:red">
+        <img src="/imgs/icos/back.png" height="20px"width="20px"alt="Volver" style="height:20px, background:red">
+        <div class="filtros">
+
         <h3>Filtrar por</h3>
         <h6>Precio</h6>
-        <form>
+        <form class="popUp precio">
+            <h6>Precio</h6>
             <div>
                 <input type="radio" name="price" id="price1">
                 <label for="price1">$40 000 a $55 000</label>
@@ -57,10 +60,10 @@
                 <label for="price5">$101 000 a $115 000</label>
             </div>
         </form>
-        <fieldset>
+        <h6>Temática</h6>
+        <fieldset class="popUp tematica">
+
             <legend><h6>Temática</h6></legend>
-
-
  
             <div>
                 <input type="checkbox" name="topic" id="topicDrama">
@@ -90,7 +93,7 @@
 
                         <div>
                 <input type="checkbox" name="topic" id="topicSuspense">
-                <label for="topicSuspense"></label>
+                <label for="topicSuspense">Suspenso</label>
             </div>
 
                         <div>
@@ -117,12 +120,18 @@
 
 
         <h6>Style</h6>
-        <a href="/?style=experimental">
-            <span>Experimental</span>
-        </a>
-        <a href="/?style=tradicional">
-            <span>Tradicional</span>
-        </a>
+        <div class="popUp estilo">
+                    <h6>Style</h6>
+
+            <a href="/?style=experimental">
+                <span>Experimental</span>
+            </a>
+            <a href="/?style=tradicional">
+                <span>Tradicional</span>
+            </a>
+            
+        </div>
+        </div>
         <!--Filtrar por:  
         añadir a database:Precio .Temática. Danza tradicional o experimental. 
         -->
@@ -165,8 +174,6 @@
         </div>
         {{/ifEquals}} {{/each}}
 
-
-        <!--Dos for, uno lee los pares, el otro los impares, los impares tienen tipo="uno", los pares tienen tipo="dos" -->
     </div>
     <script src="js/cliente.js"></script>
 

@@ -12,6 +12,24 @@ body {
 .superiorBar {
     height: 10vh;
     margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70vw;
+    padding: 10px 5vw;
+    .filtros {
+
+        display: flex;
+        flex-direction: row;
+        .popUp {
+            opacity: 0;
+        }
+    }
+    fieldset {
+        div {
+            display: inline;
+        }
+    }
 }
 .generalContainer {
     display: flex;

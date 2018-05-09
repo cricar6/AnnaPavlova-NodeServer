@@ -5,6 +5,24 @@ body {
 .superiorBar {
   height: 10vh;
   margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70vw;
+  padding: 10px 5vw;
+}
+
+.superiorBar .filtros {
+  display: flex;
+  flex-direction: row;
+}
+
+.superiorBar .filtros .popUp {
+  opacity: 0;
+}
+
+.superiorBar fieldset div {
+  display: inline;
 }
 
 .generalContainer {
