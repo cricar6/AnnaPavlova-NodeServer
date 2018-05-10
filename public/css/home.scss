@@ -15,15 +15,65 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 70vw;
-    padding: 10px 5vw;
+    justify-content: space-between;
+    width: 75vw;
+    padding: 10px 20px 10px 20px;
     .filtros {
 
         display: flex;
         flex-direction: row;
-        .popUp {
-            opacity: 0;
+        align-items: center;
+        h3 {
+            text-transform: uppercase;
+            color: $black;
+            margin-right: 50px;
         }
+        h6 {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+
+        .popUp{
+            display: none;
+            //cursor: pointer;
+            height: 100%;
+            position: fixed;
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+        }
+        .popUp .helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .popUp > div {
+            background-color: white;
+            box-shadow: 10px 10px 60px #000;
+            display: inline-block;
+            height: auto;
+            max-width: 551px;
+            min-height: 100px;
+            vertical-align: middle;
+            width: 60%;
+            position: relative;
+            border-radius: 10px;
+            padding: 15px 5%;
+        }
+
+        .pricePopCloser {
+            cursor: pointer;
+        }
+
+        
     }
     fieldset {
         div {
@@ -122,11 +172,11 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-    .generalContainer {}
+    //.generalContainer {}
 }
 
 @media only screen and ( max-width: 650px) and (min-width: 501px) {
-    .generalContainer {}
+    //.generalContainer {}
 }
 
 @media only screen and (max-width: 1140px) {

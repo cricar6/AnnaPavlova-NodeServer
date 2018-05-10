@@ -26,4 +26,35 @@ function doSmaller(i) {
 	}
 }
 
+var activatorp = document.querySelector("#activatorPrice");
+var popToShowp = document.querySelector("#precioPop");
+var closerp = document.querySelector("#pricePopCloser");
 
+var activatore = document.querySelector("#activatorEstilo");
+var popToShowe = document.querySelector("#estiloPop");
+var closere = document.querySelector("#tematicaPopCloser");
+
+var activatort = document.querySelector("#activatorTematica");
+var popToShowt = document.querySelector("#tematicaPop");
+var closert = document.querySelector("#tematicaPopCloser");
+
+funciones (activatorp, popToShowp, closerp);
+funciones (activatore, popToShowe, closere);
+funciones (activatort, popToShowt, closert);
+
+function funciones (activador, pop, closer){
+	
+	activador.addEventListener("click", function(){
+		pop.style.display = "inline-block";
+	});
+	closer.addEventListener("click", function(){
+		popToShowp.style.display = "none";
+	});
+
+	document.addEventListener("keyup", function(e){
+		if (e.keyCode == 27) {
+			pop.style.display = "none";
+		}
+	});
+
+}

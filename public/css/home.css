@@ -8,17 +8,65 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 70vw;
-  padding: 10px 5vw;
+  justify-content: space-between;
+  width: 75vw;
+  padding: 10px 20px 10px 20px;
 }
 
 .superiorBar .filtros {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.superiorBar .filtros h3 {
+  text-transform: uppercase;
+  color: #1c1c1c;
+  margin-right: 50px;
+}
+
+.superiorBar .filtros h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .superiorBar .filtros .popUp {
-  opacity: 0;
+  display: none;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.superiorBar .filtros .popUp .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.superiorBar .filtros .popUp > div {
+  background-color: white;
+  box-shadow: 10px 10px 60px #000;
+  display: inline-block;
+  height: auto;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  padding: 15px 5%;
+}
+
+.superiorBar .filtros .pricePopCloser {
+  cursor: pointer;
 }
 
 .superiorBar fieldset div {

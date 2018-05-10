@@ -36,101 +36,113 @@
 
 
     <div class="superiorBar">
-        <img src="/imgs/icos/back.png" height="20px"width="20px"alt="Volver" style="height:20px, background:red">
+        <img src="/imgs/icos/back.png" height="20px" width="20px" alt="Volver" style="height:20px, background:red">
         <div class="filtros">
 
-        <h3>Filtrar por</h3>
-        <h6>Precio</h6>
-        <form class="popUp precio">
-            <h6>Precio</h6>
-            <div>
-                <input type="radio" name="price" id="price1">
-                <label for="price1">$40 000 a $55 000</label>
+            <h3>Filtrar por:</h3>
+            <h6 id="activatorPrice">Precio</h6>
+            <form class="popUp" id="precioPop">
+                <span class="helper"></span>
+                <div>
+                    <h6 id="pricePopCloser">Precio</h6>
 
-                <input type="radio" name="price" id="price2">
-                <label for="price2">$56 000 a $70 000</label>
+                    <input type="radio" name="price" id="price1">
+                    <label for="price1">$40 000 a $55 000</label>
 
-                <input type="radio" name="price" id="price3">
-                <label for="price3">$71 000 a $85 000</label>
+                    <input type="radio" name="price" id="price2">
+                    <label for="price2">$56 000 a $70 000</label>
 
-                <input type="radio" name="price" id="price4">
-                <label for="price4">$86 000 a $100 000</label>
+                    <input type="radio" name="price" id="price3">
+                    <label for="price3">$71 000 a $85 000</label>
 
-                <input type="radio" name="price" id="price5">
-                <label for="price5">$101 000 a $115 000</label>
+                    <input type="radio" name="price" id="price4">
+                    <label for="price4">$86 000 a $100 000</label>
+
+                    <input type="radio" name="price" id="price5">
+                    <label for="price5">$101 000 a $115 000</label>
+                </div>
+            </form>
+            <h6 id="activatorTematica">Temática</h6>
+            <fieldset class="popUp" id="tematicaPop">
+                <span class="helper"></span>
+                <div>
+                    <legend>
+                        <h6 id="tematicaPopCloser">Temática</h6>
+                    </legend>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicDrama">
+                        <label for="topicDrama">Drama</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicComedy">
+                        <label for="topicComedy">Comedy</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicTragedy">
+                        <label for="topicTragedy">Tragedy</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicTango">
+                        <label for="topicComedy">Tango</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicRomance">
+                        <label for="topicRomance">Romance</label>
+                    </div>
+
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicSuspense">
+                        <label for="topicSuspense">Suspenso</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicPasion">
+                        <label for="topicPasion">Pasión</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicAdults">
+                        <label for="topicAdults">Adultos</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicKids">
+                        <label for="topicKids">Infantil</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="topic" id="topicFantasy">
+                        <label for="topicFantasy">Fantasía</label>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <h6 id="activatorEstilo">Estilo</h6>
+            <div class="popUp" id="estiloPop">
+                <span class="helper"></span>
+
+                <div>
+                    <h6 id="estiloPopCloser">Estilo</h6>
+
+                    <a href="/?style=experimental">
+                        <span>Experimental</span>
+                    </a>
+                    <a href="/?style=tradicional">
+                        <span>Tradicional</span>
+                    </a>
+
+                </div>
+
             </div>
-        </form>
-        <h6>Temática</h6>
-        <fieldset class="popUp tematica">
-
-            <legend><h6>Temática</h6></legend>
- 
-            <div>
-                <input type="checkbox" name="topic" id="topicDrama">
-                <label for="topicDrama">Drama</label>
-            </div> 
-
-            <div>
-                <input type="checkbox" name="topic" id="topicComedy">
-                <label for="topicComedy">Comedy</label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="topic" id="topicTragedy">
-                <label for="topicTragedy">Tragedy</label>
-            </div>
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicTango">
-                <label for="topicComedy">Tango</label>
-            </div>
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicRomance">
-                <label for="topicRomance">Romance</label>
-            </div>
-
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicSuspense">
-                <label for="topicSuspense">Suspenso</label>
-            </div>
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicPasion">
-                <label for="topicPasion">Pasión</label>
-            </div>
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicAdults">
-                <label for="topicAdults">Adultos</label>
-            </div>
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicKids">
-                <label for="topicKids">Infantil</label>
-            </div>
-
-                        <div>
-                <input type="checkbox" name="topic" id="topicFantasy">
-                <label for="topicFantasy">Fantasía</label>
-            </div>
-
-        </fieldset>
-
-
-        <h6>Style</h6>
-        <div class="popUp estilo">
-                    <h6>Style</h6>
-
-            <a href="/?style=experimental">
-                <span>Experimental</span>
-            </a>
-            <a href="/?style=tradicional">
-                <span>Tradicional</span>
-            </a>
-            
-        </div>
         </div>
         <!--Filtrar por:  
         añadir a database:Precio .Temática. Danza tradicional o experimental. 
@@ -147,7 +159,7 @@
                     +
                 </button>
             </a>
-            
+
             <h4 class="playTitle">
                 {{name}}
             </h4>
@@ -166,7 +178,7 @@
             <h4 class="playTitle">
                 {{name}}
             </h4>
-             <a href="/obra/{{direction}}">
+            <a href="/obra/{{direction}}">
                 <button class="seeMore">
                     +
                 </button>
