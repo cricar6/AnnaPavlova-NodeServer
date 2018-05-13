@@ -1,110 +1,192 @@
 .generalContainer {
   margin-left: 20%;
-}
-
-.generalContainer .contentContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
-.generalContainer .contentContainer .playDescription {
-  margin: 2%;
-  margin-right: 20%;
-  width: 38%;
-  text-align: center;
+.generalContainer .dataContainer {
+  width: 20%;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.generalContainer .contentContainer .playDescription .imgPlay {
+.generalContainer .dataContainer .innerDataContainer .especifications .clasifiers {
+  display: flex;
+  flex-direction: row;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .clasifiers .clasifier {
+  border: 0px;
+  border-radius: 2px;
+  margin-left: 2px;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .casificators .clasificatorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .casificators .clasificatorContainer .clasificator {
+  border-radius: 20px;
+}
+
+.generalContainer .dataContainer .innerDataContainer .playDescription p {
+  width: 80%;
+}
+
+.generalContainer .dataContainer .innerDataContainer .prices {
+  display: flex;
+  flex-direction: row;
+}
+
+.generalContainer .dataContainer .innerDataContainer .prices .price {
+  width: 50%;
+}
+
+.generalContainer .dataContainer .innerDataContainer .comprar {
+  border: 0px;
+  width: 100%;
   background: #1c1c1c;
-  border-radius: 500px;
-  width: 100%;
-  margin: 40px 0;
-  max-width: 460px;
-}
-
-.generalContainer .contentContainer .playDescription .imgPlay img {
-  width: 100%;
-  transform: scale(1.2, 1.2);
-}
-
-.generalContainer .contentContainer .playDescription p {
-  text-align: center;
-  font-size: 12px;
-}
-
-.generalContainer .contentContainer .playTable {
-  width: 90%;
-  border: #1c1c1c 2px solid;
-  margin-left: 40px;
-}
-
-.generalContainer .contentContainer .playTable .title {
-  width: 100%;
-  background: #1c1c1c;
-  text-align: center;
-  padding: 10px;
-  text-transform: uppercase;
   color: white;
-  font-size: 30px;
-  border: #1c1c1c 2px solid;
-  box-sizing: border-box;
+  border-radius: 0px;
 }
 
-.generalContainer .contentContainer .playTable .subtitle {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  width: 100%;
-  padding: 10px 0;
-  color: #1c1c1c;
-  background: white;
-  box-sizing: border-box;
+.generalContainer .presentationContainer {
+  width: 80%;
+  height: 100vh;
+  background: #1c1c1c;
+  position: relative;
 }
 
-.generalContainer .contentContainer .playTable .tabContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+.generalContainer .presentationContainer .superiorBar {
+  z-index: 70;
 }
 
-.generalContainer .contentContainer .playTable .tabContainer ul li {
-  list-style-type: none;
+.generalContainer .presentationContainer h3 {
+  color: white;
+  z-index: 1;
 }
 
-.generalContainer .contentContainer .playTable .tabContainer .dataType {
-  border-right: #1c1c1c 2px solid;
-  padding-bottom: 10px;
-  font-size: 12px;
-  width: 40%;
-  text-align: right;
-  padding-right: 10px;
+.generalContainer .presentationContainer .playPresentationContainer {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background: gray;
 }
 
-.generalContainer .contentContainer .playTable .tabContainer .data {
-  padding-left: 10px;
-  width: 60%;
-  font-size: 12px;
+/*
+.generalContainer{
+    margin-left: 20%;
+    .contentContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .playDescription{
+            margin: 2%;
+            margin-right: 20%;
+            width: 38%;
+            text-align: center;
+            .imgPlay {
+                background: $black;
+                border-radius: 500px;
+                width: 100%;
+                margin: 40px 0;
+                max-width: 460px;
+                img {
+                    width: 100%;
+                    transform: scale(1.2, 1.2);
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        .playTable {
+            width: 90%;
+            border: $black 2px solid;
+            margin-left: 40px;
+            .title {
+                width: 100%;
+                background: $black;
+                text-align: center;
+                padding: 10px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 30px;
+                border: $black 2px solid;
+                box-sizing: border-box;
+            }
+            .subtitle {
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                color: $black;
+                background: white;
+
+                box-sizing: border-box;
+
+            }
+            .tabContainer {
+
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                
+                ul li{
+                    list-style-type: none;
+                }
+                .dataType {
+                    border-right: $black 2px solid;
+                    padding-bottom: 10px;
+                    font-size: 12px;
+                    width:40%;
+                    text-align: right;
+                    padding-right: 10px;
+                }
+                .data {
+                    padding-left: 10px;
+                    width: 60%;
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+    .superiorBar{
+
+    }
 }
 
 .right {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 button {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
+*/
 @media only screen and (max-width: 1140px) {
   .generalContainer {
     margin-left: 0;
     width: 100%;
-  }
-  .generalContainer .playDescription {
-    width: 40%;
+    /*
+        .playDescription{
+            width: 40%;    
+        }
+        */
   }
 }
 /*# sourceMappingURL=play.css.map */

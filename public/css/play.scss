@@ -4,7 +4,99 @@ $garamonde: 'Cormorant Garamond',
 serif;
 $montserrate: 'Montserrat',
 sans-serif;
+.generalContainer{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    .dataContainer{
+        width: 20%;
+        height: 86vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .innerDataContainer {
+            //background: gray;
+            .especifications {
+                //background: red;
+                .clasifiers{
+                    display: flex;
+                    flex-direction: row;
+                    .clasifier {
+                        border: 0px;
+                        border-radius: 2px;
+                        //background: gold;
+                        margin-left: 2px;
+                    }
+                }
+                .casificators {
+                    //background: beige;
+                   
+                   .clasificatorContainer {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;   
+                        .clasificator{
+                            //background: red;
+                            border-radius: 20px;
+                        }
+                    } 
+                }
+            }
 
+            .playDescription {
+                //background: green;
+                h4 {
+                    
+                }
+                p {
+                    width: 80%;
+                    
+                }
+            }
+
+            .prices{
+                display: flex;
+                flex-direction: row;
+                .price {
+                    width: 50%;
+                }
+            }
+            .comprar{
+                border: 0px;
+                width: 100%;
+                background: $black;
+                color:white;
+                border-radius: 0px;
+            }
+
+        }
+    }
+    .presentationContainer{
+        width: 80%;
+        height: 100vh;
+        background: $black;
+        position: relative;
+        
+        .superiorBar{
+            z-index: 70;
+        }
+        h3 {
+            color: white;
+            z-index: 1;
+        }
+        .playPresentationContainer {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: gray;
+            //border-radius: 500px;
+            
+        }
+    }
+}
 /*
 .generalContainer{
     margin-left: 20%;
@@ -105,16 +197,16 @@ button {
 */
 
 @media only screen and (max-width: 1140px) {
-/*
     .generalContainer {
         margin-left: 0;
         width: 100%;
+        /*
         .playDescription{
             width: 40%;    
         }
+        */
     
-    }
-*/
 
+    }
 }
 

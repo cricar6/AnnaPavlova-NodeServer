@@ -181,22 +181,29 @@
 			"direction": "el-retrato-de-dorian-gray",
 			"tipo": "uno",
 			"description": "El Retrato de Dorian Gray es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
-			"basedIn": "El Retrato de Dorian Gray",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Anna Pavlova Ballet Company",
-			"choreo": "Ana Consuelo Gómez",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "14 de enero, 2018",
 			"image": "imgs/el-cascanueces.png",
+
+			"basedIn": "El Retrato de Dorian Gray",
+			"style": "experimental",
+			"genders": ["drama", "suspenso"],
+			
 			"personajes": [
 				"Dorian Gray", "Basil Hallward", "Lord Henry Woton", "Sibyl Vane", "James Vane", "Mrs. Vane", "Alan Campbell", "Kelso Gray", "Margaret Gray", "Lady Agatha", "Lord Fermor", "Víctor", "Hetty Merton"
 			],
+			
+			"music": "Anna Pavlova Ballet Company",
+			"choreo": "Ana Consuelo Gómez",
+			
+			
+			"publicationUbication": "Bogotá, Colombia",
+			"placePremiere": "Teatro nacional de Colombia",
+			"datePremiere": "14 de enero, 2018",
 			"directores": [
 				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
 			],
-			"precio": 60000,
-			"genders": ["drama", "suspenso"],
-			"style": "experimental"
+			"precio": 60000
+			
+			
 		},
 		{
 			"name": "Relaciones Peligrosas",
