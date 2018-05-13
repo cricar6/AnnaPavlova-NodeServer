@@ -17,6 +17,10 @@ handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
 
+handlebars.registerHelper('get_length', function(obj) {
+    return obj.length*290;
+});
+
 MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova', 
 {
     auth: {
@@ -28,10 +32,10 @@ MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova',
 
     db = client.db('annapavlova');
 
-    app.listen(process.env.PORT || 3000);
-    //app.listen(3000, function () {
-    //    console.log("servidor conectado")
-    //});
+    //app.listen(process.env.PORT || 3000);
+    app.listen(3000, function () {
+        console.log("servidor conectado")
+    });
     
 });
 
@@ -40,10 +44,23 @@ app.get('/', (req, res) => {
     var plays = db.collection('plays')
     .find();
 
+
+    if(req.query.precio) 
+    plays.filter({precio: {
+        $gte: parseInt(req.query.precio),
+        $lte: parseInt(req.query.precio)+15000
+    }});
+
+    if(req.query.style) 
+    plays.filter({style: req.query.style});
+
+
+
     plays.toArray((err,result) => {
         console.log('hi server')
         res.render('index', {
-            plays: result
+            plays: result,
+            
         });
     });
 });
@@ -52,6 +69,7 @@ app.get('/obra/:direction', (req, res)=> {
     console.log(req.params.direction);
     db.collection('plays').find (
         {
+            
             direction: req.params.direction
         }
     ).toArray((err, result) => {

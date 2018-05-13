@@ -32,7 +32,7 @@ var closerp = document.querySelector("#pricePopCloser");
 
 var activatore = document.querySelector("#activatorEstilo");
 var popToShowe = document.querySelector("#estiloPop");
-var closere = document.querySelector("#tematicaPopCloser");
+var closere = document.querySelector("#estiloPopCloser");
 
 var activatort = document.querySelector("#activatorTematica");
 var popToShowt = document.querySelector("#tematicaPop");
@@ -48,7 +48,7 @@ function funciones (activador, pop, closer){
 		pop.style.display = "inline-block";
 	});
 	closer.addEventListener("click", function(){
-		popToShowp.style.display = "none";
+		pop.style.display = "none";
 	});
 
 	document.addEventListener("keyup", function(e){
@@ -56,5 +56,6 @@ function funciones (activador, pop, closer){
 			pop.style.display = "none";
 		}
 	});
-
 }
+
+

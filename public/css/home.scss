@@ -10,6 +10,7 @@ body {
     overflow-y: hidden;
 }
 .superiorBar {
+    //margin-top: 30px;
     height: 10vh;
     margin-left: 20%;
     display: flex;
@@ -23,17 +24,26 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
+        .filtrosMas {
+            display:flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            h6 {
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0px 2%;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            
+        }
         h3 {
             text-transform: uppercase;
             color: $black;
-            margin-right: 50px;
-        }
-        h6 {
-            text-transform: uppercase;
-            font-weight: bold;
-            margin: 20px;
-            font-size: 14px;
-            cursor: pointer;
+            margin-right: 4%;
+            width: 26vw;
+            min-width: 50px;
         }
         
 
@@ -73,7 +83,37 @@ body {
             cursor: pointer;
         }
 
+        #estiloPop{
+            a {
+                font-family: $montserrate;
+                text-decoration: none;
+                color: $black;
+                font-weight: bold;
+                margin: 0 20px;
+            }
+        }
         
+        #precioPop{
+            div{
+                div{
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .optionRadio {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 10px;
+                        font-weight: bold;
+                    }
+
+                    button {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
     }
     fieldset {
         div {
@@ -85,6 +125,7 @@ body {
     display: flex;
     align-items: center;
     height: 90vh;
+    //padding-top: 10vh;
     margin-top:-40px;
     margin-left: 20%;
     padding-left: 20px;
@@ -121,6 +162,7 @@ body {
 }
 
 .play[tipo=uno] {
+    margin-top: -40px;
     .imgPlay {
         transform: rotate(135deg);
         img {
@@ -147,7 +189,7 @@ body {
 }
 
 .play[tipo=dos] {
-    margin-top: 140px;
+    margin-top: 0px;
     .imgPlay {
         transform: rotate(-45deg);
         img {
@@ -175,8 +217,16 @@ body {
     //.generalContainer {}
 }
 
-@media only screen and ( max-width: 650px) and (min-width: 501px) {
+@media only screen and ( max-width: 650px) /*and (min-width: 501px)*/ {
     //.generalContainer {}
+    .filtros {
+
+        h6 {
+            margin: 0;
+        }
+    
+    }
+
 }
 
 @media only screen and (max-width: 1140px) {

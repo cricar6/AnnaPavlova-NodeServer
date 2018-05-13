@@ -10,7 +10,6 @@ sans-serif;
     font-family: $montserrate;
 }
 
-
 .logo {
     img {
         background: white;
@@ -29,13 +28,20 @@ sans-serif;
     z-index: 99;
     nav {
         margin: 0 0 70px 0;
+        display: block;
+
         ul {
+
             li {
+                display: block;
                 color: $black;
                 font-family: $montserrate;
                 text-transform: uppercase;
                 font-weight: 600;
                 line-height: 50px;
+                img {
+                    display: none;
+                }
             }
         }
     }
@@ -61,9 +67,74 @@ button {
 
 @media only screen and (max-width: 1140px) {
     .lateralSide {
-        display: none;
-    }
+        height: auto;
+        padding: 10px 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: center;
+        nav {
+            margin: auto;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: $black;
+                    text-decoration: none;
+                    font-family: $montserrate;
+                    margin: 0 20px;
+                    list-style: none;
+                    font-size: 12px;
+                    p {
+                      
+                        line-height: 30px;
+                    }
+                    img {
+                        display: block;
 
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .socialNets {
+            display: none;
+        }
+    }
+    .logo {
+        img {
+            height: 60px;
+            margin: auto;
+        }
+    }
 }
 
-@media only screen and (min-width: 1140px) {}
+@media only screen and (max-width: 500px) {
+    .logo {
+        display: none
+    }
+    .lateralSide {
+        padding: 10px 10px 0 10px;
+
+        nav {
+            ul {
+              
+                li {
+             
+                    margin: 0 5px;
+                  
+                }
+            }
+        }
+    }
+}

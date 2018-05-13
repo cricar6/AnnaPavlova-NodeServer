@@ -19,18 +19,27 @@ body {
   align-items: center;
 }
 
+.superiorBar .filtros .filtrosMas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.superiorBar .filtros .filtrosMas h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0px 2%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .superiorBar .filtros h3 {
   text-transform: uppercase;
   color: #1c1c1c;
-  margin-right: 50px;
-}
-
-.superiorBar .filtros h6 {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 20px;
-  font-size: 14px;
-  cursor: pointer;
+  margin-right: 4%;
+  width: 26vw;
+  min-width: 50px;
 }
 
 .superiorBar .filtros .popUp {
@@ -67,6 +76,32 @@ body {
 
 .superiorBar .filtros .pricePopCloser {
   cursor: pointer;
+}
+
+.superiorBar .filtros #estiloPop a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.superiorBar .filtros #precioPop div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.superiorBar .filtros #precioPop div div .optionRadio {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.superiorBar .filtros #precioPop div div button {
+  margin-top: 20px;
 }
 
 .superiorBar fieldset div {
@@ -115,6 +150,10 @@ body {
   vertical-align: middle;
 }
 
+.play[tipo=uno] {
+  margin-top: -40px;
+}
+
 .play[tipo=uno] .imgPlay {
   transform: rotate(135deg);
 }
@@ -140,7 +179,7 @@ body {
 }
 
 .play[tipo=dos] {
-  margin-top: 140px;
+  margin-top: 0px;
 }
 
 .play[tipo=dos] .imgPlay {
@@ -165,6 +204,12 @@ body {
   transform: scale(1.1, 1.1);
   margin-left: -11px;
   margin-top: -9px;
+}
+
+@media only screen and (max-width: 650px) {
+  .filtros h6 {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 1140px) {

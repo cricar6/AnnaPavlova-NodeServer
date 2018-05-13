@@ -19,10 +19,10 @@
         </div>
         <nav>
             <ul>
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Obras</li>
-                <li>Contacto</li>
+                <li ><img src="" alt="" width="20px"> <p>Inicio</p> </li>
+                <li ><img src="" alt="" width="20px"> <p>Nosotros</p></li>
+                <li ><img src="" alt="" width="20px"> <p>Obras</p></li>
+                <li ><img src="" alt="" width="20px"> <p>Contacto</p></li>
 
             </ul>
         </nav>
@@ -40,26 +40,40 @@
         <div class="filtros">
 
             <h3>Filtrar por:</h3>
-            <h6 id="activatorPrice">Precio</h6>
+            <div class="filtrosMas">
+<h6 id="activatorPrice">Precio</h6>
             <form class="popUp" id="precioPop">
                 <span class="helper"></span>
                 <div>
                     <h6 id="pricePopCloser">Precio</h6>
+                    <div>
+                    <div class="optionRadio">
+                        <input type="radio" onclick="valorPrecioFilter(this.value)" name="precio" value="40000" id="price1">
+                        <label for="price1">$40 000 a $55 000</label>
+                    </div>
+                    <div class="optionRadio">
+                    <input type="radio" onclick="valorPrecioFilter(this.value)"  name="precio" value="56000" id="price2">
+                    <label for="price2">$56 000 a $71 000</label>
 
-                    <input type="radio" name="price" id="price1">
-                    <label for="price1">$40 000 a $55 000</label>
+                    </div>
+                    <div class="optionRadio">
+                    <input type="radio" onclick="valorPrecioFilter(this.value)"  name="precio" value="72000" id="price3">
+                    <label for="price3">$72 000 a $87 000</label>
 
-                    <input type="radio" name="price" id="price2">
-                    <label for="price2">$56 000 a $70 000</label>
+                    </div>
+                    <div class="optionRadio">
+                    <input type="radio"  onclick="valorPrecioFilter(this.value)" name="precio" value="88000" id="price4">
+                    <label for="price4">$88 000 a $103 000</label>
+                    </div>
+                    <div class="optionRadio">
+                    <input type="radio" onclick="valorPrecioFilter(this.value)"  name="precio" value="104000" id="price5">
+                    <label for="price5">$104 000 a $119 000</label>
 
-                    <input type="radio" name="price" id="price3">
-                    <label for="price3">$71 000 a $85 000</label>
-
-                    <input type="radio" name="price" id="price4">
-                    <label for="price4">$86 000 a $100 000</label>
-
-                    <input type="radio" name="price" id="price5">
-                    <label for="price5">$101 000 a $115 000</label>
+                    </div>
+                    <button class="confirm" id="precioBut">
+                        ¡Filtrar!
+                    </button>
+                    </div>
                 </div>
             </form>
             <h6 id="activatorTematica">Temática</h6>
@@ -130,7 +144,7 @@
             <div class="popUp" id="estiloPop">
                 <span class="helper"></span>
 
-                <div>
+                <div class="">
                     <h6 id="estiloPopCloser">Estilo</h6>
 
                     <a href="/?style=experimental">
@@ -143,12 +157,14 @@
                 </div>
 
             </div>
+            </div>
+            
         </div>
         <!--Filtrar por:  
         añadir a database:Precio .Temática. Danza tradicional o experimental. 
         -->
     </div>
-    <div class="generalContainer" style="width: 4300px">
+    <div class="generalContainer" style="width: {{get_length plays}}">
 
 
         {{#each plays}} {{#ifEquals tipo "uno"}}
@@ -188,7 +204,9 @@
 
     </div>
     <script src="js/cliente.js"></script>
+    <script>
 
+    </script>
 </body>
 
 </html>
