@@ -59,3 +59,6 @@ function funciones (activador, pop, closer){
 }
 
 
+
+
+

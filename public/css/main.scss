@@ -67,7 +67,7 @@ button {
 
 @media only screen and (max-width: 1140px) {
     .lateralSide {
-        height: auto;
+        height: 18vh;
         padding: 10px 20px;
         position: fixed;
         bottom: 0;
@@ -107,9 +107,7 @@ button {
                 }
             }
         }
-        .socialNets {
-            display: none;
-        }
+        
     }
     .logo {
         img {
@@ -118,12 +116,17 @@ button {
         }
     }
 }
-
+@media only screen and (max-width: 920px) {
+    .socialNets {
+        display: block;
+    }
+}
 @media only screen and (max-width: 500px) {
     .logo {
         display: none
     }
     .lateralSide {
+
         padding: 10px 10px 0 10px;
 
         nav {
@@ -136,5 +139,9 @@ button {
                 }
             }
         }
+    }
+
+    .socialNets {
+        display: none;
     }
 }

@@ -58,7 +58,7 @@ button {
 
 @media only screen and (max-width: 1140px) {
   .lateralSide {
-    height: auto;
+    height: 18vh;
     padding: 10px 20px;
     position: fixed;
     bottom: 0;
@@ -97,12 +97,15 @@ button {
     display: block;
     width: 50px;
   }
-  .lateralSide .socialNets {
-    display: none;
-  }
   .logo img {
     height: 60px;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .socialNets {
+    display: block;
   }
 }
 
@@ -115,6 +118,9 @@ button {
   }
   .lateralSide nav ul li {
     margin: 0 5px;
+  }
+  .socialNets {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

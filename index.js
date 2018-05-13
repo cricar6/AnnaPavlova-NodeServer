@@ -20,7 +20,7 @@ handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
 handlebars.registerHelper('get_length', function(obj) {
     return obj.length*290;
 });
-
+/*
 MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova', 
 {
     auth: {
@@ -37,6 +37,15 @@ MongoClient.connect('mongodb+srv://cluster0-wiwgu.mongodb.net/annapavlova',
         console.log("servidor conectado")
     });
     
+});
+*/
+MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+    if (err) throw err;
+
+    db = client.db('annapavlova');
+
+    // Iniciar servidor
+    app.listen(3000);
 });
 
 app.get('/', (req, res) => {
