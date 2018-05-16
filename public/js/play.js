@@ -177,6 +177,10 @@ var activatorD = document.querySelector("#cD");
 var popToShowD = document.querySelector("#cpD");
 var closerD = document.querySelector("#cCPD");
 
+var activadorCarrito = document.querySelector("#carritoActivator");
+var popCarrito = document.querySelector("#carritoPop")
+
+funciones (activadorCarrito, popCarrito, popCarrito);
 funciones (activatorA, popToShowA, closerA);
 funciones (activatorB, popToShowB, closerB);
 funciones (activatorC, popToShowC, closerC);
@@ -197,3 +201,19 @@ function funciones (activador, pop, closer){
 		}
 	});
 }
+
+document.querySelectorAll(".comprar").forEach(function(button){
+    button.addEventListener("click", function() {
+
+        var id = button.parentElement.getAttribute('data-id');
+        
+        arreglo.push(id);
+        actualizarCarrito();
+
+        localStorage.setItem('arreglo', JSON.stringify(arreglo));
+
+    })
+});
+
+
+

@@ -54,7 +54,7 @@
                 </a>
             </div>
                     
-            <div class="innerDataContainer">
+            <div class="innerDataContainer" data-id="{{play._id}}">
                 <div class="especifications">
                     <div class="clasifiers">
                         <button class="clasifier" id="obraClasifier">
@@ -107,7 +107,16 @@
             
             <div class="superiorBarPresentation">
                 <img src="" height="20px" width="20px" alt="" >
-                <img src="" height="20px" width="20px" alt="" >
+                <img src="" height="20px" width="20px" alt="" id="carritoActivator">
+                <div class="popUp" id="carritoPop">
+                    <span class="helper"></span>
+                    <div>
+                        <h2>Carrito: <span class="carrito">0</span></h2>
+
+                        <ul class="lista"></ul>
+
+                    </div>
+                </div>
             </div>
             <div class="playPresentationContainer">
                 <div class="imgPresentation" style="background-image: url(/{{play.image}})"></div>
@@ -232,6 +241,9 @@
     </div>
     -->
 
+    <script src="/js/general.js"></script>
     <script src="/js/play.js"></script>
+    <script src="/js/checkout.js"></script>
+
 </body>
 </html>

@@ -1,8 +1,8 @@
 const express = require('express'), 
     engines = require('consolidate'),
     handlebars = require('handlebars'),
-    MongoClient = require('mongodb').MongoClient;
-    //ObjectID = require('mongodb').ObjectID;
+    MongoClient = require('mongodb').MongoClient,
+    ObjectID = require('mongodb').ObjectID;
     
 var app = express(),
     db;
@@ -69,7 +69,7 @@ app.get('/', (req, res) => {
 
 
     plays.toArray((err,result) => {
-        console.log('hi server')
+        //console.log('hi server')
         res.render('index', {
             plays: result,
             
@@ -77,15 +77,35 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/obtenerObjectID', (req, res)=> {
+    var arreglo = req.query.ids.split(',');
+
+    arreglo = arreglo.map (function(id){
+        return new ObjectID(id);
+    }) ;
+    var plays = db.collection('plays').find (
+        {
+            _id: {
+                $in: arreglo
+            }
+        }
+    ).toArray((err, result) => {
+        res.send(result);
+    });
+})
+
+app.get('/checkout', (req, res) => {
+    res.render('checkout');
+});
 app.get('/obra/:direction', (req, res)=> {
-    console.log(req.params.direction);
+    //console.log(req.params.direction);
     db.collection('plays').find (
         {
             
             direction: req.params.direction
         }
     ).toArray((err, result) => {
-        console.log(result[0]);
+        //console.log(result[0]);
         res.render('play', {
             play: result[0]
         });
