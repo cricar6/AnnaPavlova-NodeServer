@@ -62,6 +62,9 @@ app.get('/', (req, res) => {
 
     if(req.query.style) 
     plays.filter({style: req.query.style});
+    
+    if(req.query.genders) 
+    plays.filter({genders: req.query.genders});
 
 
 

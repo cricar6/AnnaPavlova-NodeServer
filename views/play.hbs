@@ -33,12 +33,27 @@
         </div>
     </div>
 
+    <div class="datos">
+        <span id="basedIn"> {{play.basedIn}}</span>
+        <span id="style"> {{play.style}}</span>
+        <span id="genders"> {{play.genders}}</span>
+        <span id="publicationUbication"> {{play.publicationUbication}}</span>
+        <span id="music"> {{play.music}}</span>
+        <span id="placePremiere"> {{play.placePremiere}}</span>
+        <span id="choreo"> {{play.choreo}}</span>
+        <span id="fecha"> {{play.datePremiere}}</span>
+        <span id="personajes"> {{play.personajes}}</span>
+        <span id="directores"> {{play.directores}}</span>
+    </div>
     <div class="generalContainer">
 
         <div class="dataContainer">
             <div class="superiorBar">
+                <a href="/">
                 <img src="/imgs/icos/back.png" height="20px" width="20px" alt="Volver" >
+                </a>
             </div>
+                    
             <div class="innerDataContainer">
                 <div class="especifications">
                     <div class="clasifiers">
@@ -72,15 +87,15 @@
                     </div>
                 </div>
                 <div class="playDescription">
-                    <h4>Name</h4>
-                    <p>esta es una descripcion corta</p>   
+                    <h4>{{play.name}}</h4>
+                    <p>{{play.description}}</p>   
                 </div>
                 <div class="prices">
                     <div class="price">
-                        Precio1
+                        {{play.precio}}
                     </div>
                     <div class="price">
-                        Precio2
+                        {{play.precio}}
                     </div>
                 </div>
                 <button class="comprar">
@@ -89,17 +104,16 @@
             </div>
         </div>
         <div class="presentationContainer">
-            <div class="playPresentationContainer">
-
-            </div>
+            
             <div class="superiorBarPresentation">
                 <img src="" height="20px" width="20px" alt="" >
                 <img src="" height="20px" width="20px" alt="" >
-
             </div>
-            <h3>
-                Name
-            </h3>
+            <div class="playPresentationContainer">
+                <div class="imgPresentation" style="background-image: url(/{{play.image}})"></div>
+                <!--<img src="/{{play.image}}" alt="">-->
+            </div>
+            
             
         </div>
     </div>

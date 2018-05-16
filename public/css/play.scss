@@ -1,16 +1,19 @@
 $black: #1c1c1c;
 $gray: #cecece;
+$red: crimson;
 $garamonde: 'Cormorant Garamond',
 serif;
 $montserrate: 'Montserrat',
 sans-serif;
-.generalContainer{
+.datos {
+    display: none;
+}
+
+.generalContainer {
     margin-left: 20%;
     display: flex;
     flex-direction: row;
-
-
-    .dataContainer{
+    .dataContainer {
         width: 350px;
         height: 100%;
         display: flex;
@@ -21,11 +24,11 @@ sans-serif;
             background: white;
             .especifications {
                 background: #eee;
-                .clasifiers{
+                .clasifiers {
                     background: white;
                     display: flex;
                     flex-direction: row;
-                    padding-left:10px;
+                    padding-left: 10px;
                     .clasifier {
                         width: auto;
                         height: auto;
@@ -34,7 +37,7 @@ sans-serif;
                         border: 0px;
                         border-radius: 2px;
                         background: $black;
-                        color: white; 
+                        color: white;
                     }
                 }
                 .casificators {
@@ -45,35 +48,33 @@ sans-serif;
                         font-style: italic;
                         margin-bottom: 10px;
                     }
-                   .clasificatorContainer {
+                    .clasificatorContainer {
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-between;   
-                        
-                        .clasificator{
+                        justify-content: space-between;
+                        .clasificator {
                             //background: red;
                             padding: 8px;
                             border-radius: 25px;
                             background: $black;
                             cursor: pointer;
                         }
-                    } 
+                    }
                 }
             }
-
             .playDescription {
                 background: white;
-                padding: 40px 40px;
+                padding: 20px 40px;
                 h4 {
-                    font-size: 35px;
+                    font-size: 30px;
                     font-family: $montserrate;
                 }
                 p {
-                    font-weight: 300;  
+                    font-size: 12px;
+                    font-weight: 300;
                 }
             }
-
-            .prices{
+            .prices {
                 display: flex;
                 flex-direction: row;
                 .price {
@@ -88,71 +89,104 @@ sans-serif;
                     &:hover {
                         opacity: 1;
                         transition: ease-in-out .3s;
-
                     }
                 }
             }
-            .comprar{
+            .comprar {
                 border: 0px;
                 height: auto;
                 padding: 30px 0;
                 width: 100%;
                 background: $black;
-                color:white;
+                color: white;
                 border-radius: 0px;
                 margin: 0;
-                &:hover{
+                &:hover {
                     transition: ease-in-out .3s;
                     background: crimson;
                 }
             }
-
         }
     }
-    .presentationContainer{
-        
-        width: auto;
-        height: 100vh;
+    .presentationContainer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 4;
+        height: 100%;
         background: $black;
         position: relative;
-        
-        .superiorBar{
-        }
-        h3 {
-            color: white;
-        }
-        .playPresentationContainer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 500px;
-            height: 500px;
-            background: gray;
-            //border-radius: 500px;
+        background: $black;
+        .superiorBarPresentation {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            height: 50px;
+            position: relative;
+            z-index: 99;
+            img {
+                background: white;
+                padding: 15px;
+                margin: 10px;
+                border-radius: 40px;
+                cursor: pointer;
+            }
             
         }
     }
+    .playPresentationContainer {
+        //background: blueviolet;
+        flex-grow: 3; 
+        position: relative;
+        img {
+            height: 100%;
+            //bottom: 0;
+            //position: absolute;
+        }
+        .imgPresentation {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 2;
+            &:after{
+                content: "El \A cascanueces";
+                color: white;
+                position: absolute;
+                box-sizing: border-box;
+                padding: 0 40px;
+                top:100;
+                z-index: 1;
+                //background: black;
+                width: 100%;
+                font-family: $montserrate;
+                font-weight: bold;
+                font-size: 50px;
+                opacity: 1; 
+            }
+        }
+        
+    }
 }
 
-.popUp{
-    display: none;
-    //cursor: pointer;
+.popUp {
+    display: none; //cursor: pointer;
     height: 100%;
     position: fixed;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     text-align: center;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 50;
 }
+
 .popUp .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
 
-.popUp > div {
+.popUp>div {
     background-color: white;
     box-shadow: 10px 10px 60px #000;
     display: inline-block;
@@ -166,14 +200,10 @@ sans-serif;
     padding: 15px 5%;
 }
 
-
 @media only screen and (max-width: 1140px) {
     .generalContainer {
         margin-left: 0;
         width: 100%;
         height: 82vh;
-
-
     }
 }
-

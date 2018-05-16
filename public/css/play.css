@@ -1,3 +1,7 @@
+.datos {
+  display: none;
+}
+
 .generalContainer {
   margin-left: 20%;
   display: flex;
@@ -64,15 +68,16 @@
 
 .generalContainer .dataContainer .innerDataContainer .playDescription {
   background: white;
-  padding: 40px 40px;
+  padding: 20px 40px;
 }
 
 .generalContainer .dataContainer .innerDataContainer .playDescription h4 {
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
 .generalContainer .dataContainer .innerDataContainer .playDescription p {
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -114,23 +119,62 @@
 }
 
 .generalContainer .presentationContainer {
-  width: auto;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  height: 100%;
   background: #1c1c1c;
+  position: relative;
+  background: #1c1c1c;
+}
+
+.generalContainer .presentationContainer .superiorBarPresentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  position: relative;
+  z-index: 99;
+}
+
+.generalContainer .presentationContainer .superiorBarPresentation img {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.generalContainer .playPresentationContainer {
+  flex-grow: 3;
   position: relative;
 }
 
-.generalContainer .presentationContainer h3 {
-  color: white;
+.generalContainer .playPresentationContainer img {
+  height: 100%;
 }
 
-.generalContainer .presentationContainer .playPresentationContainer {
+.generalContainer .playPresentationContainer .imgPresentation {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.generalContainer .playPresentationContainer .imgPresentation:after {
+  content: "El \A cascanueces";
+  color: white;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 500px;
-  height: 500px;
-  background: gray;
+  box-sizing: border-box;
+  padding: 0 40px;
+  top: 100;
+  z-index: 1;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  opacity: 1;
 }
 
 .popUp {

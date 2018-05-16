@@ -1,278 +1,278 @@
 {
 	"plays": [{
-			"name": "El cascanueces",
-			"direction": "el-cascanueces",
-			"tipo": "uno",
-			"description": "El cascanueces es un cuento de hadas-ballet, encargado por el director de los 'Teatros imperiales' Iván Vsévolozhsy. Se trata de la op. 71 de Piotr Ilich Chaikovsy, un mùsico ruso.",
-			"basedIn": "Schelkúnchik (el cascanueces)",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Piotr Ilich Chaikovski",
-			"choreo": "Marius Petipa",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "18 de diciembre, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Clara", "Drosselmeyer", "Príncipe Cascanueces", "Rey Ratón", "Sugar Plum Fairy"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 50000,
-			"genders": ["drama", "comedia", "romance"],
-			"style": "tradicional"
-		},
-		{
-			"name": "El lago de los cisnes",
-			"direction": "el-lago-de-los-cisnes",
-			"tipo": "dos",
-			"description": "El lago de los cisnes es una composición de ballet en danza clásica, hace su debút en el teatro Bolshoi en Rusia, por lo que tiene una fuerte influencia europea y nórdica.",
-			"basedIn": "Der geraubte Schleier (el velo robado)",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Piotr Ilich Chaikovski",
-			"choreo": "Julius Reisinger",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "12 y 14 de diciembre, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Odette", "Principe Sigfrido", "Reina madre", "Rothbart", "Odile"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 55000,
-			"genders": ["drama", "tragedia", "romance"],
-			"style": "tradicional"
-		},
-		{
-			"name": "Hercules",
-			"direction": "hercules",
-			"tipo": "uno",
-			"description": "Basado en una ópera de Francesco Cavalli en Paris, Hercules está compuesto de un prólogo y cinco actos. Eracle Amante, la ópera en que está basada fue el espectáclo más grandioso concebido en Europa hasta la fecha.",
-			"basedIn": "Eracle Amante (Hércules enamorado)",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Francesco Cavalli",
-			"choreo": "Jean-Baptiste Lully",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "24 de diciembre, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Diana", "Hércules", "Deyanira", "Hilas", "Yole", "Belleza", "Mercurio", "Neptuno", "Venus", "El Tíber", "Éurito", "Licas", "Laomedonte", "Busiris", "Clerica"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 75000,
-			"genders": ["drama", "tragedia", "romance"],
-			"style": "tradicional"
-		},
-		{
-			"name": "Alicia en el país de las maravillas",
-			"direction": "alicia-en-el-pais-de-las-maravillas",
-			"tipo": "dos",
-			"description": "Alicia en el país de las maravillas tiene una estructura de tres actos. Basado originalmente en el cuento de Lewis Caroll, tiene en su haber el reconocimiento tener el mejor trabajo orquestal en un ballet de todos los tiempos",
-			"basedIn": "Alice's Adventures in Wonderland (las aventuras de alicia en el país de las maravillas)",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Christopher Wheeldon",
-			"choreo": "Joby Talbot",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "28 de diciembre, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Alicia", "El guerrero de corazones", "El conejo blanco", "La reina de corazones", "El rey de corazones", "El sombrerero loco", "La oruga", "La duquesa", "La liebre de marzo", "La hermana de Alicia", "El ejecutor"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
+		"name": "El cascanueces",
+		"direction": "el-cascanueces",
+		"tipo": "uno",
+		"description": "El cascanueces es un cuento de hadas-ballet, encargado por el director de los 'Teatros imperiales' Iván Vsévolozhsy. Se trata de la op. 71 de Piotr Ilich Chaikovsy, un mùsico ruso.",
+		"basedIn": "Schelkúnchik (el cascanueces)",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Piotr Ilich Chaikovski",
+		"choreo": "Marius Petipa",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "18 de diciembre, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Clara", "Drosselmeyer", "Príncipe Cascanueces", "Rey Ratón", "Sugar Plum Fairy"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 50000,
+		"genders": ["drama", "comedia", "romance"],
+		"style": "tradicional"
+	},
+	{
+		"name": "El lago de los cisnes",
+		"direction": "el-lago-de-los-cisnes",
+		"tipo": "dos",
+		"description": "El lago de los cisnes es una composición de ballet en danza clásica, hace su debút en el teatro Bolshoi en Rusia, por lo que tiene una fuerte influencia europea y nórdica.",
+		"basedIn": "Der geraubte Schleier (el velo robado)",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Piotr Ilich Chaikovski",
+		"choreo": "Julius Reisinger",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "12 y 14 de diciembre, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Odette", "Principe Sigfrido", "Reina madre", "Rothbart", "Odile"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 55000,
+		"genders": ["drama", "tragedia", "romance"],
+		"style": "tradicional"
+	},
+	{
+		"name": "Hercules",
+		"direction": "hercules",
+		"tipo": "uno",
+		"description": "Basado en una ópera de Francesco Cavalli en Paris, Hercules está compuesto de un prólogo y cinco actos. Eracle Amante, la ópera en que está basada fue el espectáclo más grandioso concebido en Europa hasta la fecha.",
+		"basedIn": "Eracle Amante (Hércules enamorado)",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Francesco Cavalli",
+		"choreo": "Jean-Baptiste Lully",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "24 de diciembre, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Diana", "Hércules", "Deyanira", "Hilas", "Yole", "Belleza", "Mercurio", "Neptuno", "Venus", "El Tíber", "Éurito", "Licas", "Laomedonte", "Busiris", "Clerica"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 75000,
+		"genders": ["drama", "tragedia", "romance"],
+		"style": "tradicional"
+	},
+	{
+		"name": "Alicia en el país de las maravillas",
+		"direction": "alicia-en-el-pais-de-las-maravillas",
+		"tipo": "dos",
+		"description": "Alicia en el país de las maravillas tiene una estructura de tres actos. Basado originalmente en el cuento de Lewis Caroll, tiene en su haber el reconocimiento tener el mejor trabajo orquestal en un ballet de todos los tiempos",
+		"basedIn": "Alice's Adventures in Wonderland (las aventuras de alicia en el país de las maravillas)",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Christopher Wheeldon",
+		"choreo": "Joby Talbot",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "28 de diciembre, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Alicia", "El guerrero de corazones", "El conejo blanco", "La reina de corazones", "El rey de corazones", "El sombrerero loco", "La oruga", "La duquesa", "La liebre de marzo", "La hermana de Alicia", "El ejecutor"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
 
-			"precio": 60000,
-			"genders": ["comedia", "fantasia", "infantil"],
-			"style": "tradicional"
-		},
-		{
-			"name": "El Quijote",
-			"direction": "el-quijote",
-			"tipo": "uno",
-			"description": "Basado en la novela española Don Quijote de la mancha y constituido de un prólogo y cuatro actos, estrenado originalmente en el Teatro Bolshói el 14 de diciembre de 1869.",
-			"basedIn": "Don Quijote de la Mancha",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Ludwig Minkus",
-			"choreo": "Marius Petipa",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "31 de diciembre, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Don Quijote", "Sancho Panza", "Kitri", "Gamache", "Basilio", "Rey de los gitanos", "El Caballero de la Luna de Plata", "Carrasco"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 40000,
-			"genders": ["drama", "comedia"],
-			"style": "tradicional"
-		},
-		{
-			"name": "Coppelia",
-			"direction": "coppelia",
-			"tipo": "dos",
-			"description": "Coppelia es un ballet sentimental y cómico basado en una historia macabra de E.T.A Hoffmann titulada Der Sandmann (el hombre de arena), publicada en 1815",
-			"basedIn": "Der Sandmann (el hombre de arena)",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Léo Delibes",
-			"choreo": "Arthur Saint-Léon",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "4 de enero, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Doctor Coopélius", "Coppelia", "Franz"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 100000,
-			"genders": ["drama", "tragedia", "romance", "fantasia"],
-			"style": "tradicional"
-		},
-		{
-			"name": "New Orleans Cabaret en Paris",
-			"direction": "new-orleans-cabaret-en-paris",
-			"tipo": "uno",
-			"description": "New Orleans Cabaret en Paris es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
-			"basedIn": "Historia original",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Anna Pavlova Ballet Company",
-			"choreo": "Ana Consuelo Gómez",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "7 de enero, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Jean Pierre", "Anne"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 50000,
-			"genders": ["tragedia", "tango", "adultos"],
-			"style": "experimental"
-		},
-		{
-			"name": "Amor y Muerte en Berlin",
-			"direction": "amor-y-muerte-en-berlin",
-			"tipo": "dos",
-			"description": "Amor y Muerte en Berlín es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
-			"basedIn": "Historia original",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Anna Pavlova Ballet Company",
-			"choreo": "Ana Consuelo Gómez",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "11 de enero, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Berlin", "Wolfgang", "Adalia"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 55000,
-			"genders": ["drama", "tragedia", "romance", "tango"],
-			"style": "experimental"
-		},
-		{
-			"name": "El Retrato de Dorian Gray",
-			"direction": "el-retrato-de-dorian-gray",
-			"tipo": "uno",
-			"description": "El Retrato de Dorian Gray es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
-			"image": "imgs/el-cascanueces.png",
+		"precio": 60000,
+		"genders": ["comedia", "fantasia", "infantil"],
+		"style": "tradicional"
+	},
+	{
+		"name": "El Quijote",
+		"direction": "el-quijote",
+		"tipo": "uno",
+		"description": "Basado en la novela española Don Quijote de la mancha y constituido de un prólogo y cuatro actos, estrenado originalmente en el Teatro Bolshói el 14 de diciembre de 1869.",
+		"basedIn": "Don Quijote de la Mancha",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Ludwig Minkus",
+		"choreo": "Marius Petipa",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "31 de diciembre, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Don Quijote", "Sancho Panza", "Kitri", "Gamache", "Basilio", "Rey de los gitanos", "El Caballero de la Luna de Plata", "Carrasco"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 40000,
+		"genders": ["drama", "comedia"],
+		"style": "tradicional"
+	},
+	{
+		"name": "Coppelia",
+		"direction": "coppelia",
+		"tipo": "dos",
+		"description": "Coppelia es un ballet sentimental y cómico basado en una historia macabra de E.T.A Hoffmann titulada Der Sandmann (el hombre de arena), publicada en 1815",
+		"basedIn": "Der Sandmann (el hombre de arena)",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Léo Delibes",
+		"choreo": "Arthur Saint-Léon",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "4 de enero, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Doctor Coopélius", "Coppelia", "Franz"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 100000,
+		"genders": ["drama", "tragedia", "romance", "fantasia"],
+		"style": "tradicional"
+	},
+	{
+		"name": "New Orleans Cabaret en Paris",
+		"direction": "new-orleans-cabaret-en-paris",
+		"tipo": "uno",
+		"description": "New Orleans Cabaret en Paris es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
+		"basedIn": "Historia original",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Anna Pavlova Ballet Company",
+		"choreo": "Ana Consuelo Gómez",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "7 de enero, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Jean Pierre", "Anne"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 50000,
+		"genders": ["tragedia", "tango", "adultos"],
+		"style": "experimental"
+	},
+	{
+		"name": "Amor y Muerte en Berlin",
+		"direction": "amor-y-muerte-en-berlin",
+		"tipo": "dos",
+		"description": "Amor y Muerte en Berlín es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
+		"basedIn": "Historia original",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Anna Pavlova Ballet Company",
+		"choreo": "Ana Consuelo Gómez",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "11 de enero, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Berlin", "Wolfgang", "Adalia"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 55000,
+		"genders": ["drama", "tragedia", "romance", "tango"],
+		"style": "experimental"
+	},
+	{
+		"name": "El Retrato de Dorian Gray",
+		"direction": "el-retrato-de-dorian-gray",
+		"tipo": "uno",
+		"description": "El Retrato de Dorian Gray es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
+		"image": "imgs/el-cascanueces.png",
 
-			"basedIn": "El Retrato de Dorian Gray",
-			"style": "experimental",
-			"genders": ["drama", "suspenso"],
-			
-			"personajes": [
-				"Dorian Gray", "Basil Hallward", "Lord Henry Woton", "Sibyl Vane", "James Vane", "Mrs. Vane", "Alan Campbell", "Kelso Gray", "Margaret Gray", "Lady Agatha", "Lord Fermor", "Víctor", "Hetty Merton"
-			],
-			
-			"music": "Anna Pavlova Ballet Company",
-			"choreo": "Ana Consuelo Gómez",
-			
-			
-			"publicationUbication": "Bogotá, Colombia",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "14 de enero, 2018",
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 60000
-			
-			
-		},
-		{
-			"name": "Relaciones Peligrosas",
-			"direction": "relaciones-peligrosas",
-			"tipo": "dos",
-			"description": "Relaciones Peligrosas es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
-			"basedIn": "Relaciones Peligrosas",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Anna Pavlova Ballet Company",
-			"choreo": "Ana Consuelo Gómez",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "18 de enero, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Patty", "Armando", "Santiago", "Leo", "Víctor"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 55000,
-			"genders": ["comedia", "romance", "suspenso"],
-			"style": "experimental"
-		},
-		{
-			"name": "Carmen",
-			"direction": "carmen",
-			"tipo": "uno",
-			"description": "Carmen es una de las obras de ballet experimental con coreografía original de Anna Pavlova Académia de Ballet",
-			"basedIn": "Carmen Suite Ballet",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Georges Bizet",
-			"choreo": "Ana Consuelo Gómez",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "21 de enero, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Carmen", "Destino", "Don José", "Escamillo"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 70000,
-			"genders": ["tango", "drama", "tragedia", "romance"],
-			"style": "experimental"
-		},
-		{
-			"name": "Alexandros- Iksander",
-			"tipo": "dos",
-			"direction": "alexandros-iksander",
-			"description": "Alexandros- Iksander es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
-			"basedIn": "Historia original",
-			"publicationUbication": "Bogotá, Colombia",
-			"music": "Anna Pavlova Ballet Company",
-			"choreo": "Ana Consuelo Gómez",
-			"placePremiere": "Teatro nacional de Colombia",
-			"datePremiere": "25 de enero, 2018",
-			"image": "imgs/el-cascanueces.png",
-			"personajes": [
-				"Alexandros", "Olimpia", "Filipo", "Casandro"
-			],
-			"directores": [
-				"Ana Consuelo Gómez", "Caballero Jaime Díaz"
-			],
-			"precio": 65000,
-			"genders": ["drama", "tragedia", "romance"],
-			"style": "experimental"
-		}
+		"basedIn": "El Retrato de Dorian Gray",
+		"style": "experimental",
+		"genders": ["drama", "suspenso"],
+		
+		"personajes": [
+			"Dorian Gray", "Basil Hallward", "Lord Henry Woton", "Sibyl Vane", "James Vane", "Mrs. Vane", "Alan Campbell", "Kelso Gray", "Margaret Gray", "Lady Agatha", "Lord Fermor", "Víctor", "Hetty Merton"
+		],
+		
+		"music": "Anna Pavlova Ballet Company",
+		"choreo": "Ana Consuelo Gómez",
+		
+		
+		"publicationUbication": "Bogotá, Colombia",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "14 de enero, 2018",
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 60000
+		
+		
+	},
+	{
+		"name": "Relaciones Peligrosas",
+		"direction": "relaciones-peligrosas",
+		"tipo": "dos",
+		"description": "Relaciones Peligrosas es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
+		"basedIn": "Relaciones Peligrosas",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Anna Pavlova Ballet Company",
+		"choreo": "Ana Consuelo Gómez",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "18 de enero, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Patty", "Armando", "Santiago", "Leo", "Víctor"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 55000,
+		"genders": ["comedia", "romance", "suspenso"],
+		"style": "experimental"
+	},
+	{
+		"name": "Carmen",
+		"direction": "carmen",
+		"tipo": "uno",
+		"description": "Carmen es una de las obras de ballet experimental con coreografía original de Anna Pavlova Académia de Ballet",
+		"basedIn": "Carmen Suite Ballet",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Georges Bizet",
+		"choreo": "Ana Consuelo Gómez",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "21 de enero, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Carmen", "Destino", "Don José", "Escamillo"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 70000,
+		"genders": ["tango", "drama", "tragedia", "romance"],
+		"style": "experimental"
+	},
+	{
+		"name": "Alexandros- Iksander",
+		"tipo": "dos",
+		"direction": "alexandros-iksander",
+		"description": "Alexandros- Iksander es una de las obras de ballet experimental con música y coreografía original de Anna Pavlova Académia de Ballet",
+		"basedIn": "Historia original",
+		"publicationUbication": "Bogotá, Colombia",
+		"music": "Anna Pavlova Ballet Company",
+		"choreo": "Ana Consuelo Gómez",
+		"placePremiere": "Teatro nacional de Colombia",
+		"datePremiere": "25 de enero, 2018",
+		"image": "imgs/el-cascanueces.png",
+		"personajes": [
+			"Alexandros", "Olimpia", "Filipo", "Casandro"
+		],
+		"directores": [
+			"Ana Consuelo Gómez", "Caballero Jaime Díaz"
+		],
+		"precio": 65000,
+		"genders": ["drama", "tragedia", "romance"],
+		"style": "experimental"
+	}
 
 
 
-	]
+]
 }

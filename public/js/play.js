@@ -1,23 +1,37 @@
+
+var basedInData = document.getElementById("basedIn").textContent;
+var styleData = document.getElementById("style").textContent;
+var gendersData = document.getElementById("genders").textContent;
+var publicationUbicationData = document.getElementById("publicationUbication").textContent;
+var musicData = document.getElementById("music").textContent;
+var placePremiereData = document.getElementById("placePremiere").textContent;
+var choreoData = document.getElementById("choreo").textContent;
+var fechaData = document.getElementById("fecha").textContent;
+var personajesData = document.getElementById("personajes").textContent;
+var directoresData = document.getElementById("directores").textContent;
+
+
+
 var clasificatorA1 = `
 <span class="helper"></span>
     <div>
         <h6>Información general</h6>
         <div class="data">
             <span class="dataTitle">Basado en:</span>
-            <span class="dataContent">basedIn</span>
+            <span class="dataContent">`+basedInData+`</span>
         </div>
         <div class="data">
             <span class="dataTitle">
                 Estilo
             </span>
-            <span class="dataContent">style</span>
+            <span class="dataContent">`+styleData+`</span>
         </div>
         <div class="data">
             <span class="dataTitle">
                 Géneros
             </span>
             <span class="dataContent">
-                genders
+                `+gendersData+`
             </span>
         </div>
     </div>
@@ -27,7 +41,7 @@ var clasificatorA2 = `
 <span class="helper"></span>
 <div>
     <h6>Ubicación</h6>
-    <p>publicationUbication</p>
+    <p>`+publicationUbicationData+`</p>
 </div>
 `;
 
@@ -35,7 +49,7 @@ var clasificatorB1 = `
 <span class="helper"></span>
 <div>
     <h6>Musica</h6>
-    <p>music</p>
+    <p>`+musicData+`</p>
 </div>
 `;
 
@@ -43,32 +57,32 @@ var clasificatorB2 = `
 <span class="helper"></span>
 <div>
     <h6>Teatro</h6>
-    <p>placePremiere</p>
+    <p>`+placePremiereData+`</p>
 </div>
 `;
 var clasificatorC1 = `
 <span class="helper"></span>
 <div>
     <h6>Coreografía</h6>
-    <p>choreo</p>
+    <p>`+choreoData+`</p>
 </div>
 `;
 
 var clasificatorC2 = `<span class="helper"></span>
 <div>
     <h6>Fecha</h6>
-    <p>14 de enero, 2018</p>
+    <p>`+fechaData+`</p>
 </div>`;
 
 var clasificatorD1 = `<span class="helper"></span>
 <div>
     <h6>Personajes</h6>
-    <p>personajes</p>
+    <p>`+personajesData+`</p>
 </div>`;
 var clasificatorD2 = `<span class="helper"></span>
 <div>
     <h6>Directores</h6>
-    <p>directores</p>
+    <p>`+directoresData+`</p>
 </div>`;
 
 
