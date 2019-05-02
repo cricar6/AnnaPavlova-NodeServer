@@ -1,0 +1,241 @@
+
+$black: #1c1c1c;
+$gray: #cecece;
+$garamonde: 'Cormorant Garamond',
+serif;
+$montserrate: 'Montserrat',
+sans-serif;
+
+body {
+    overflow-y: hidden;
+}
+.superiorBar {
+    //margin-top: 30px;
+    height: 10vh;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+    padding: 10px 20px 10px 20px;
+    .filtros {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .filtrosMas {
+            display:flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-between;
+            h6 {
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0px 2%;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            
+        }
+        h3 {
+            text-transform: uppercase;
+            color: $black;
+            margin-right: 4%;
+            width: 26vw;
+            min-width: 50px;
+        }
+        
+
+        .popUp{
+            display: none;
+            //cursor: pointer;
+            height: 100%;
+            position: fixed;
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+        }
+        .popUp .helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .popUp > div {
+            background-color: white;
+            box-shadow: 10px 10px 60px #000;
+            display: inline-block;
+            height: auto;
+            max-width: 551px;
+            min-height: 100px;
+            vertical-align: middle;
+            width: 60%;
+            position: relative;
+            border-radius: 10px;
+            padding: 15px 5%;
+        }
+
+        .pricePopCloser {
+            cursor: pointer;
+        }
+
+        #estiloPop{
+            a {
+                font-family: $montserrate;
+                text-decoration: none;
+                color: $black;
+                font-weight: bold;
+                margin: 0 20px;
+            }
+        }
+        
+        #precioPop{
+            div{
+                div{
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    .optionRadio {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 10px;
+                        font-weight: bold;
+                    }
+
+                    button {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    fieldset {
+        div {
+            display: inline;
+        }
+    }
+}
+.generalContainer {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    //padding-top: 10vh;
+    margin-top:-40px;
+    margin-left: 20%;
+    padding-left: 20px;
+
+    .play {
+        float: left;
+        width: 300px;
+        text-align: center;
+        margin: 0 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imgPlay {
+            background: $black;
+            border-radius: 500px;
+            width: 100%;
+            margin: 20px 0;
+            img {
+                width: 100%;
+                transform: scale(1.2, 1.2);
+            }
+        }
+        .playTitle {
+            height: 55px;
+            width: 100%;
+            text-transform: uppercase;
+            color: white;
+            background: $black;
+            padding: 15px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.play[tipo=uno] {
+    margin-top: -40px;
+    .imgPlay {
+        transform: rotate(135deg);
+        img {
+            transform: rotate(-135deg) scale(1.2, 1.2);
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 10px solid $black;
+            outline-offset: 15px;
+            /* Halve the circle */
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 100%;
+            transform: scale(1.1, 1.1);
+            margin-left: -11px;
+            margin-top: -9px;
+            
+            
+        }
+    }
+}
+
+.play[tipo=dos] {
+    margin-top: 0px;
+    .imgPlay {
+        transform: rotate(-45deg);
+        img {
+            transform: rotate(45deg) scale(1.2, 1.2);
+        }
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 10px solid $black;
+            outline-offset: 15px;
+            /* Halve the circle */
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 100%;
+            transform: scale(1.1, 1.1);
+            margin-left: -11px;
+            margin-top: -9px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    //.generalContainer {}
+}
+
+@media only screen and ( max-width: 650px) /*and (min-width: 501px)*/ {
+    //.generalContainer {}
+    .filtros {
+
+        h6 {
+            margin: 0;
+        }
+    
+    }
+
+}
+
+@media only screen and (max-width: 1140px) {
+    .generalContainer {
+        margin-left: 0;
+        width: 100%;
+    }
+    .superiorBar {
+        height: 10vh;
+        margin-left: 0;
+    }
+}

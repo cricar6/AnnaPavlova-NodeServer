@@ -7,6 +7,7 @@
     <title>Anna Pavlova | Todas las obras</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 </head>
@@ -18,10 +19,22 @@
         </div>
         <nav>
             <ul>
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Obras</li>
-                <li>Contacto</li>
+                <li>
+                    <img src="" alt="" width="20px">
+                    <p>Inicio</p>
+                </li>
+                <li>
+                    <img src="" alt="" width="20px">
+                    <p>Nosotros</p>
+                </li>
+                <li>
+                    <img src="" alt="" width="20px">
+                    <p>Obras</p>
+                </li>
+                <li>
+                    <img src="" alt="" width="20px">
+                    <p>Contacto</p>
+                </li>
 
             </ul>
         </nav>
@@ -33,56 +46,134 @@
         </div>
     </div>
 
-    <div class="generalContainer">
-        <div class="arriba">
-            <div class="play1">
-                <button class="seeMore">
-                    +
-                </button>
 
-                <h4 class="playTitle">
-                    Coppelia
-                </h4>
-                <div class="imgPlay">
-                    <img src="imgs/coppelia.png" alt="Coppelia">
+    <div class="superiorBar">
+        <img src="/imgs/icos/back.png" height="20px" width="20px" alt="Volver" style="height:20px, background:red">
+        <div class="filtros">
+
+            <h3>Filtrar por:</h3>
+            <div class="filtrosMas">
+                <h6 id="activatorPrice">Precio</h6>
+                <form class="popUp" id="precioPop">
+                    <span class="helper"></span>
+                    <div>
+                        <h6 id="pricePopCloser">Precio</h6>
+                        <div>
+                            <div class="optionRadio">
+                                <input type="radio" onclick="valorPrecioFilter(this.value)" name="precio" value="40000" id="price1">
+                                <label for="price1">$40 000 a $55 000</label>
+                            </div>
+                            <div class="optionRadio">
+                                <input type="radio" onclick="valorPrecioFilter(this.value)" name="precio" value="56000" id="price2">
+                                <label for="price2">$56 000 a $71 000</label>
+
+                            </div>
+                            <div class="optionRadio">
+                                <input type="radio" onclick="valorPrecioFilter(this.value)" name="precio" value="72000" id="price3">
+                                <label for="price3">$72 000 a $87 000</label>
+
+                            </div>
+                            <div class="optionRadio">
+                                <input type="radio" onclick="valorPrecioFilter(this.value)" name="precio" value="88000" id="price4">
+                                <label for="price4">$88 000 a $103 000</label>
+                            </div>
+                            <div class="optionRadio">
+                                <input type="radio" onclick="valorPrecioFilter(this.value)" name="precio" value="104000" id="price5">
+                                <label for="price5">$104 000 a $119 000</label>
+
+                            </div>
+                            <button class="confirm" id="precioBut">
+                                ¡Filtrar!
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <h6 id="activatorTematica">Temática</h6>
+                <fieldset class="popUp" id="tematicaPop">
+                    <span class="helper"></span>
+                    <div>
+                        <h6 id="tematicaPopCloser">Temática</h6>
+
+                        <a href="?genders=drama">Drama</a>
+                        <a href="?genders=comedia">Comedia</a>
+                        <a href="?genders=tragedia">Tragedia</a>
+                        <a href="?genders=tango">Tango</a>
+                        <a href="?genders=romance">Romance</a>
+                        <a href="?genders=adultos">Adultos</a>
+                        <a href="?genders=suspenso">Suspenso</a>
+                        <a href="?genders=infantil">Infantil</a>
+                         <a href="?genders=fantasia">Fantasia</a>
+                    </div>
+
+                </fieldset>
+
+
+                <h6 id="activatorEstilo">Estilo</h6>
+                <div class="popUp" id="estiloPop">
+                    <span class="helper"></span>
+
+                    <div class="">
+                        <h6 id="estiloPopCloser">Estilo</h6>
+
+                        <a href="/?style=experimental">
+                            <span>Experimental</span>
+                        </a>
+                        <a href="/?style=tradicional">
+                            <span>Tradicional</span>
+                        </a>
+
+                    </div>
+
                 </div>
             </div>
 
         </div>
-        <div class="abajo">
-            <div class="play1">
+        <!--Filtrar por:  
+        añadir a database:Precio .Temática. Danza tradicional o experimental. 
+        -->
+    </div>
+    <div class="generalContainer" style="width: {{get_length plays}}">
 
-                <div class="imgPlay">
-                    <img src="imgs/coppelia.png" alt="Coppelia">
-                </div>
 
+        {{#each plays}} {{#ifEquals tipo "uno"}}
+        <div class="play" tipo="uno">
 
-                <h4 class="playTitle">
-                    Coppelia
-                </h4>
+            <a href="/obra/{{direction}}">
                 <button class="seeMore">
                     +
                 </button>
+            </a>
+
+            <h4 class="playTitle">
+                {{name}}
+            </h4>
+            <div class="imgPlay">
+                <img src="{{image}}" alt="{{name}}">
             </div>
-            <div class="play1">
-
-                <div class="imgPlay">
-                    <img src="imgs/coppelia.png" alt="Coppelia">
-                </div>
-
-
-                <h4 class="playTitle">
-                    Coppelia
-                </h4>
-                <button class="seeMore">
-                    +
-                </button>
-            </div>
-
         </div>
+        {{else}}
 
+        <div class="play" tipo="dos">
+
+
+            <div class="imgPlay">
+                <img src="{{image}}" alt="{{name}}">
+            </div>
+            <h4 class="playTitle">
+                {{name}}
+            </h4>
+            <a href="/obra/{{direction}}">
+                <button class="seeMore">
+                    +
+                </button>
+            </a>
+        </div>
+        {{/ifEquals}} {{/each}}
 
     </div>
+    <script src="/js/cliente.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>

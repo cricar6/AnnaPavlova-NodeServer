@@ -1,0 +1,219 @@
+.datos {
+  display: none;
+}
+
+.generalContainer {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+}
+
+.generalContainer .dataContainer {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+}
+
+.generalContainer .dataContainer .innerDataContainer {
+  background: white;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications {
+  background: #eee;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .clasifiers {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .clasifiers .clasifier {
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border: 0px;
+  border-radius: 2px;
+  background: #1c1c1c;
+  color: white;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .casificators {
+  padding: 20px 40px;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .casificators #clasificatorTitle {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .casificators .clasificatorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.generalContainer .dataContainer .innerDataContainer .especifications .casificators .clasificatorContainer .clasificator {
+  padding: 8px;
+  border-radius: 25px;
+  background: #1c1c1c;
+  cursor: pointer;
+}
+
+.generalContainer .dataContainer .innerDataContainer .playDescription {
+  background: white;
+  padding: 20px 40px;
+}
+
+.generalContainer .dataContainer .innerDataContainer .playDescription h4 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.generalContainer .dataContainer .innerDataContainer .playDescription p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.generalContainer .dataContainer .innerDataContainer .prices {
+  display: flex;
+  flex-direction: row;
+}
+
+.generalContainer .dataContainer .innerDataContainer .prices .price {
+  box-sizing: border-box;
+  background: #1c1c1c;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.generalContainer .dataContainer .innerDataContainer .prices .price:hover {
+  opacity: 1;
+  transition: ease-in-out .3s;
+}
+
+.generalContainer .dataContainer .innerDataContainer .comprar {
+  border: 0px;
+  height: auto;
+  padding: 30px 0;
+  width: 100%;
+  background: #1c1c1c;
+  color: white;
+  border-radius: 0px;
+  margin: 0;
+}
+
+.generalContainer .dataContainer .innerDataContainer .comprar:hover {
+  transition: ease-in-out .3s;
+  background: crimson;
+}
+
+.generalContainer .presentationContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  height: 100%;
+  background: #1c1c1c;
+  position: relative;
+  background: #1c1c1c;
+}
+
+.generalContainer .presentationContainer .superiorBarPresentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 50px;
+  position: relative;
+  z-index: 99;
+}
+
+.generalContainer .presentationContainer .superiorBarPresentation img {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.generalContainer .playPresentationContainer {
+  flex-grow: 3;
+  position: relative;
+}
+
+.generalContainer .playPresentationContainer img {
+  height: 100%;
+}
+
+.generalContainer .playPresentationContainer .imgPresentation {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.generalContainer .playPresentationContainer .imgPresentation:after {
+  content: "El \A cascanueces";
+  color: white;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0 40px;
+  top: 100;
+  z-index: 1;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  opacity: 1;
+}
+
+.popUp {
+  display: none;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.popUp .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.popUp > div {
+  background-color: white;
+  box-shadow: 10px 10px 60px #000;
+  display: inline-block;
+  height: auto;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 10px;
+  padding: 15px 5%;
+}
+
+@media only screen and (max-width: 1140px) {
+  .generalContainer {
+    margin-left: 0;
+    width: 100%;
+    height: 82vh;
+  }
+}
+/*# sourceMappingURL=play.css.map */

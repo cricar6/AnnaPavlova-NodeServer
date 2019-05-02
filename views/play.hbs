@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anna Pavlova | {{play.name}}
+    </title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/play.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="lateralSide">
+        <div class="logo">
+            <img src="/imgs/Logo.png" alt="Anna Pavlova - Academia de Ballet">
+        </div>
+        <nav>
+                        <ul>
+                <li ><img src="" alt="" width="20px"> <p>Inicio</p> </li>
+                <li ><img src="" alt="" width="20px"> <p>Nosotros</p></li>
+                <li ><img src="" alt="" width="20px"> <p>Obras</p></li>
+                <li ><img src="" alt="" width="20px"> <p>Contacto</p></li>
+
+            </ul>
+        </nav>
+        <div class="socialNets">
+            <img src="/imgs/icos/Pinterest.png" alt="Pinterest" class="nets">
+            <img src="/imgs/icos/Twitter.png" alt="Twitter" class="nets">
+            <img src="/imgs/icos/Facebook.png" alt="Facebook" class="nets">
+            <img src="/imgs/icos/Instagram.png" alt="Instagram" class="nets">
+        </div>
+    </div>
+
+    <div class="datos">
+        <span id="basedIn"> {{play.basedIn}}</span>
+        <span id="style"> {{play.style}}</span>
+        <span id="genders"> {{play.genders}}</span>
+        <span id="publicationUbication"> {{play.publicationUbication}}</span>
+        <span id="music"> {{play.music}}</span>
+        <span id="placePremiere"> {{play.placePremiere}}</span>
+        <span id="choreo"> {{play.choreo}}</span>
+        <span id="fecha"> {{play.datePremiere}}</span>
+        <span id="personajes"> {{play.personajes}}</span>
+        <span id="directores"> {{play.directores}}</span>
+    </div>
+    <div class="generalContainer">
+
+        <div class="dataContainer">
+            <div class="superiorBar">
+                <a href="/">
+                <img src="/imgs/icos/back.png" height="20px" width="20px" alt="Volver" >
+                </a>
+            </div>
+                    
+            <div class="innerDataContainer" data-id="{{play._id}}">
+                <div class="especifications">
+                    <div class="clasifiers">
+                        <button class="clasifier" id="obraClasifier">
+                            Sobre la obra
+                        </button>
+                        <button class="clasifier" id="functionClasifier">
+                            Sobre la función
+                        </button>
+                    </div>
+                    <div class="casificators">
+                        <p id="clasificatorTitle">Sobre la funcion</p>
+                        <div class="clasificatorContainer">
+                            <div class="clasificator" id="cA">
+                            </div>
+                            <div class="popUp" id="cpA">
+                            </div>
+                            <div class="clasificator" id="cB">
+                            </div>
+                            <div class="popUp" id="cpB">
+                            </div>
+                            <div class="clasificator" id="cC">
+                            </div>
+                            <div class="popUp" id="cpC">
+                            </div>
+                            <div class="clasificator" id="cD">
+                            </div>
+                            <div class="popUp" id="cpD">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="playDescription">
+                    <h4>{{play.name}}</h4>
+                    <p>{{play.description}}</p>   
+                </div>
+                <div class="prices">
+                    <div class="price">
+                        {{play.precio}}
+                    </div>
+                    <div class="price">
+                        {{play.precio}}
+                    </div>
+                </div>
+                <button class="comprar">
+                    Comprar
+                </button>
+            </div>
+        </div>
+        <div class="presentationContainer">
+            
+            <div class="superiorBarPresentation">
+                <img src="" height="20px" width="20px" alt="" >
+                <img src="" height="20px" width="20px" alt="" id="carritoActivator">
+                <div class="popUp" id="carritoPop">
+                    <span class="helper"></span>
+                    <div>
+                        <h2>Carrito: <span class="carrito">0</span></h2>
+
+                        <ul class="lista"></ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="playPresentationContainer">
+                <div class="imgPresentation" style="background-image: url(/{{play.image}})"></div>
+                <!--<img src="/{{play.image}}" alt="">-->
+            </div>
+            
+            
+        </div>
+    </div>
+    <!--
+    <div class="generalContainer">
+
+        <div class="superiorBar">
+            <span style="font-size: 25px;">Back</span>
+        </div>
+        <div class="contentContainer">
+            <div class="playDescription">
+            
+            
+            <div class="imgPlay">
+                <img src="/{{play.image}}" alt="asds{{play.name}}">
+             </div>
+             <p>{{play.description}}</p>
+            </div>
+
+            <div class="right">
+                
+                <div class="playTable">
+                    <div class="title">
+                        <h5>{{play.name}}</h6>
+                    </div>
+                    <div class="subtitle">
+                        <h6>Sobre la obra</h6>
+                        
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Basado en:
+                        </p>
+                        <p class="data">
+                            {{play.basedIn}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Música:
+                        </p>
+                        <p class="data">
+                            {{play.music}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType"> 
+                            Coreografía:
+                        </p>
+                        <p class="data">
+                            {{play.choreo}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Personajes:
+                        </p>
+                        <ul>
+                            {{#each play.personajes}}
+                             <li class="data">
+                                    {{this}}
+                             </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="subtitle">
+                        <h6>Puesta en escena</h6> 
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Ubicación:
+                        </p>
+                        <p class="data">
+                            {{play.publicationUbication}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Teatro:
+                        </p>
+                        <p class="data">
+                            
+                            {{play.placePremiere}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Fecha:
+                        </p>
+                        <p class="data">
+                            
+                            {{play.datePremiere}}
+                        </p>
+                    </div>
+                    <div class="tabContainer">
+                        <p class="dataType">
+                            Directores:
+                        </p>
+                        <ul>
+                            {{#each play.directores}}
+                             <li class="data">
+                                    {{this}}
+                             </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <button class="">
+                        Reservar Boletería
+                </button>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <script src="/js/general.js"></script>
+    <script src="/js/play.js"></script>
+    <script src="/js/checkout.js"></script>
+
+</body>
+</html>
